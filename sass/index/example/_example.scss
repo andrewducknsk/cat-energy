@@ -1,0 +1,32 @@
+.example {
+  padding-top: 22px;
+  padding-bottom: 40px;
+  background: #f2f2f2;
+  &__wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .example {
+    padding: 0;
+    padding-top: 50px;
+    border-top: 1px solid #e6e6e6;
+    background: none;
+    &__wrapper {
+      padding: 0 30px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .example {
+    &__wrapper {
+      padding: 0;
+    }
+    &__wrapper--desctop {
+      padding-top: 70px;
+      background: #f2f2f2;
+    }
+  }
+}

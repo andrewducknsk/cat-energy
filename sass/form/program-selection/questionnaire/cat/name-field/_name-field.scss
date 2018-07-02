@@ -1,0 +1,33 @@
+.name-field {
+  display: inline-block;
+  &__text {
+    @include field-text;
+  }
+  &__area {
+    width: 228px;
+    height: 45px;
+    padding: 13px 15px;
+    border: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: 768px) {
+  .name-field {
+    width: 100%;
+    &__text {
+      @include field-text--tablet;
+    }
+    &__area {
+      width: 566px;
+      height: 52px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .name-field {
+    &__area {
+      width: 508px;
+    }
+  }
+}

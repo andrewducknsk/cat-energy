@@ -1,0 +1,119 @@
+.mass-gathering {
+  //@include categories;
+  margin-bottom: 20px;
+  padding: 22px 20px;
+  background: #f2f2f2;
+  &__logo {
+    position: relative;
+    float: left;
+    &:before {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: #68b738;
+      border-radius: 50%;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 11px;
+    left: -8px;
+  }
+
+  &__title {
+    display: inline-block;
+    margin-top: 7px;
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &__description {
+    position: relative;
+    margin: 0;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 24px;
+    @include description-text;
+    @include grey-line;
+  }
+  &__catalog {
+    position: relative;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000;
+    @include arrow;
+  }
+}
+
+@media (min-width: 768px) {
+  .mass-gathering {
+    padding: 80px 55px 65px;
+    &__logo {
+      margin-left: 45px;
+      padding-right: 5px;
+      float: right;
+      &:before {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    &__icon {
+      top: 45px;
+      left: -35px;
+    }
+    &__title {
+      margin: 0;
+      font-size: 36px;
+      line-height: 36px;
+    }
+    &__description {
+      min-width: 340px;
+      font-size: 16px;
+      line-height: 24px;
+      &:after {
+        content: none;
+      }
+    }
+    &__catalog {
+      font-size: 20px;
+      line-height: 20px;
+      &:before {
+        top: 13.335px;
+      }
+      &:after {
+        top: 9px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .mass-gathering {
+    display: inline-block;
+    width: 570px;
+    padding: 45px 55px 62px 52px;
+    &__logo {
+      margin: 0;
+      margin-right: 65px;
+      float: left;
+      &:before {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &__icon {
+      top: 22px;
+      left: -20px;
+    }
+    &__title {
+      margin-top: 34px;
+    }
+    &__description {
+      margin-top: 80px;
+    }
+  }
+}

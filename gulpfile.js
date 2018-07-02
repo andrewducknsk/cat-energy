@@ -1,6 +1,4 @@
-'use strict'
-
-var gulp = require('gulp'),
+let gulp = require('gulp'),
     sass = require('gulp-sass'),
     plumber = require('gulp-plumber'),
     postcss = require('gulp-postcss'),
@@ -15,6 +13,7 @@ var gulp = require('gulp'),
     include = require('posthtml-include'),
     del = require('del'),
     run = require('run-sequence');
+    /*watch = require('gulp-watch');*/
 
 gulp.task('style', function () {
   gulp.src('sass/**/*.scss')
@@ -47,7 +46,7 @@ gulp.task('webp', function () {
 });
 
 gulp.task('sprite', function () {
-  return gulp.src('img/logo-*.svg')
+  return gulp.src('img/icon-*.svg')
     .pipe(svgsprite({
       inlineSvg: true
     }))
@@ -80,7 +79,8 @@ gulp.task('copy', function () {
     'fonts/**/*.{woff,woff2}',
     'img/**',
     'js/**',
-    'css/normalize.css'
+    'css/normalize.css',
+    'favicon.ico'
   ], {
     base: '.'
   })
@@ -102,5 +102,5 @@ gulp.task('serve', function () {
   });
   gulp.watch('./sass/**/*.scss', ['style']).on('change', server.reload);
   gulp.watch('./*.html', ['html']).on('change', server.reload);
-  gulp.watch('./*js', ['js']);
+  gulp.watch('./*js', ['js']).on('change', server.reload);
 });

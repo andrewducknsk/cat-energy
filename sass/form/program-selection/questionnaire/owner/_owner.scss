@@ -1,0 +1,53 @@
+.owner {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  &__title {
+    position: relative;
+    margin-bottom: 30px;
+    padding-right: 90px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    &:after {
+      width: 99px;
+      right: -20px;
+      @include green-line;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .owner {
+    padding-top: 80px;
+    padding-bottom: 35px;
+    &__title {
+      margin-bottom: 75px;
+      font-size: 36px;
+      line-height: 36px;
+      &:after {
+        width: 145px;
+        right: -70px;
+      }
+      &:before {
+        left: -70px;
+        width: 30px;
+        @include green-line;
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .owner {
+    padding-top: 72px;
+    &__title {
+      &:after {
+        right: -40px;
+        width: 707px;
+      }
+      &:before {
+        content: none;
+      }
+    }
+  }
+}

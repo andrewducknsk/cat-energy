@@ -1,0 +1,35 @@
+.weight-field {
+  display: inline-block;
+  margin: 15px 0;
+  &__text {
+    @include field-text;
+  }
+  &__area {
+    width: 206px;
+    height: 45px;
+    padding: 13px 15px;
+    border: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: 768px) {
+  .weight-field {
+    width: 100%;
+    margin: 20px 0;
+    &__text {
+      @include field-text--tablet;
+    }
+    &__area {
+      width: 538px;
+      height: 52px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .weight-field {
+    &__area {
+      width: 480px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.email {
+  margin-bottom: 15px;
+  &__text {
+    @include field-text;
+  }
+  &__field {
+    width: 216px;
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 35px;
+    text-overflow: ellipsis;
+    border: 1px solid #e6e6e6;
+    background: url("../../../../../../img/form/mail.svg") no-repeat;
+    background-position: 94% 13px;
+  }
+}
+
+@media (min-width: 768px) {
+  .email {
+    margin-bottom: 20px;
+    &__text {
+      @include field-text--tablet;
+    }
+    &__field {
+      width: 549px;
+      height: 52px;
+      padding-right: 45px;
+      background-position: 96% 18px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .email {
+    display: inline-block;
+    width: 570px;
+    margin-right: 60px;
+    &__field {
+      width: 497px;
+    }
+  }
+}

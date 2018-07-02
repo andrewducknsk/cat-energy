@@ -1,0 +1,64 @@
+.extra-goods {
+  padding-top: 32px;
+  &__wrapper {
+    padding: 0 20px;
+  }
+  &__title {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    &:before {
+      @include green-line;
+      right: -20px;
+      top: 15px;
+      width: 53px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .extra-goods {
+    &__wrapper {
+      padding: 0 30px;
+    }
+    &__title {
+      padding-left: 36px;
+      font-size: 36px;
+      line-height: 36px;
+      &:before {
+        top: 20px;
+        right: -30px;
+        width: 327px;
+      }
+      &:after {
+        @include green-line;
+        top: 20px;
+        left: -30px;
+        width: 28px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .extra-goods {
+    display: inline-block;
+    width: 935px;
+    margin-right: 76px;
+    padding-top: 77px;
+    &__wrapper {
+      padding: 0;
+      padding-left: 40px;
+    }
+    &__title {
+      &:before {
+        right: 0;
+      }
+      &:after {
+        //left: 0;
+      }
+    }
+  }
+}

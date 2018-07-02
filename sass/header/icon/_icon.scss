@@ -1,0 +1,14 @@
+.icon {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 55px;
+  margin-bottom: 14px;
+  padding-left: 20px;
+  vertical-align: top;
+}
+
+@media (min-width: 768px) {
+  .icon {
+    margin: 0;
+  }
+}

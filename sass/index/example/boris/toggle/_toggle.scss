@@ -1,0 +1,64 @@
+.slider__radio--before[type="radio"]:checked~.slider__slide-1 {
+  display: block;
+  margin: 0 auto;
+}
+.slider__radio--after[type="radio"]:checked~.slider__slide-2 {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider__radio--before[type="radio"]:checked~.toggle__before--pin:after {
+  @include after-before__pin;
+  left: 5px;
+}
+
+.slider__radio--after[type="radio"]:checked~.toggle__after--pin:before {
+  @include after-before__pin;
+  right: 5px;
+}
+
+.toggle {
+  text-align: center;
+  &__after,
+  &__before {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    &--pin {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 12px;
+      background: #fff;
+      border: 1px solid #cdcdcd;
+    }
+  }
+  &__after {
+    margin-left: 20px;
+    &--pin {
+      border-left: none;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+  &__before {
+    margin-right: 20px;
+    &--pin {
+      border-right: none;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .toggle {
+    //background: #eaeaea;
+  }
+}
+
+@media (min-width: 1300px) {
+  .toggle {
+    //display: inline-block;
+    //width: 650px;
+  }
+}
+

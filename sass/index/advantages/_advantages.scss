@@ -1,0 +1,134 @@
+.advantages {
+  padding-bottom: 42px;
+  &__wrapper {
+    padding: 0 20px;
+  }
+  &__title {
+    margin: 0;
+    //margin-top: 2px;
+    margin-bottom: 28px;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+  &__list {
+
+  }
+  &__item {
+    height: 63px;
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &__logo {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 20px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: #68b738;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -13px;
+  }
+  &__text {
+    margin: 0;
+    margin-left: 20px;
+    padding-top: 3px;
+    @include  description-text;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    &__wrapper {
+      padding: 0 30px;
+    }
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__item {
+      position: relative;
+      width: 45.8%;
+      min-height: 228px;
+      margin-bottom: 80px;
+      &:nth-last-of-type(-n+2) {
+        margin-bottom: 0;
+      }
+      &:first-of-type:after {
+        content: '1';
+        @include advantages-number;
+      }
+      &:nth-of-type(2):after {
+        content: '2';
+        @include advantages-number;
+      }
+      &:nth-of-type(3):after {
+        content: '3';
+        @include advantages-number;
+      }
+      &:last-of-type:after {
+        content: '4';
+        @include advantages-number;
+      }
+    }
+    &__logo {
+      position: relative;
+      width: 80px;
+      float: none;
+      &:before {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    &__icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -15px;
+      margin-left: -12.5px;
+    }
+    &__text {
+      width: 75.5%;
+      margin: 0;
+      padding-top: 32px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .advantages {
+    &__wrapper {
+      padding: 0 40px;
+    }
+    &__item {
+      width: 285px;
+      margin: 0;
+    }
+    &__text {
+      width: 86%;
+    }
+  }
+}

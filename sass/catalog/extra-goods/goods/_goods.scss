@@ -1,0 +1,42 @@
+.goods {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border-top: 1px solid #cdcdcd;
+  &:last-of-type {
+    border-bottom: 1px solid #cdcdcd;
+  }
+  &__title {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) {
+  .goods {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 27px 38px 0;
+    &__title {
+      width: 50%;
+      margin-bottom: 27px;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .goods {
+    justify-content: start;
+    align-items: baseline;
+    padding: 15px 0;
+    &__title {
+      width: 245px;
+      margin: 0;
+      margin-right: 80px;
+    }
+  }
+}

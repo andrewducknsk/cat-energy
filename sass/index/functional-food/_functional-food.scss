@@ -1,0 +1,46 @@
+.functional-food {
+  position: relative;
+  height: 500px;
+  background: url('../img/index/bg-mobile.jpg') no-repeat top;
+  &__wrapper {
+    padding: 0 20px;
+  }
+  &__preview {
+    position: absolute;
+    top: 165px;
+    left: 50%;
+    right: 10%;
+    margin-left: -140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .functional-food {
+    height: 865px;
+    background: url("../../../img/index/bg-t.jpg") no-repeat bottom;
+    &__wrapper {
+      padding: 0 120px;
+    }
+    &__preview {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .functional-food {
+    height: 697px;
+    margin-top: -115px;
+    background: url("../../../img/index/bg-d.jpg") no-repeat;
+    background-position: 111% 0;
+    &__wrapper {
+      padding: 0 120px;
+    }
+    &__preview {
+      display: inline-block;
+      top: 143px;
+      left: 48.1%;
+    }
+  }
+
+}

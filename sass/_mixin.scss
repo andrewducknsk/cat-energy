@@ -1,0 +1,211 @@
+@mixin description-text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444;
+}
+
+@mixin description-product {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin plus {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  width: 30px;
+  height: 2px;
+  background: #d3d3d3;
+}
+
+@mixin green-pin {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  margin-left: -6px;
+  background: #68b738;
+  border-radius: 50%;
+}
+
+@mixin green-pin--tablet {
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  margin-left: -9px;
+}
+
+@mixin green-line {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  height: 3px;
+  margin-top: -1.5px;
+  background: #68b738;
+}
+
+@mixin grey-pin {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border: 1px solid #cecece;
+  border-radius: 50%;
+}
+
+@mixin grey-pin--tablet {
+  width: 40px;
+  height: 40px;
+  margin-right: 13px;
+}
+
+@mixin grey-line {
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    margin-top: 1px;
+    width: 100%;
+    height: 1px;
+    background: #d9d9d9;
+  }
+}
+
+@mixin field-text {
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin field-text--tablet {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+@mixin after-before__pin {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 34px;
+  height: 6px;
+  margin-top: -3px;
+  background: #68b738;
+  border-radius: 5px;
+}
+
+@mixin example-text {
+  width: 124px;
+  height: 55px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  &__text {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  &__description {
+    display: block;
+    margin: 0 auto;
+    background: #f2f2f2;
+    width: 70px;
+    text-align: center;
+    text-transform: lowercase;
+    @include description-text;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+@mixin arrow {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 8.335px;
+    right: -31%;
+    width: 17px;
+    height: 2px;
+    background: #3e4242;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: -37%;
+    width: 0;
+    height: 0;
+    border-width: 5.5px 0 5.5px 6px;
+    border-style: solid;
+    border-color: transparent #3e4242;
+  }
+}
+
+@mixin advantages-number {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  width: 115px;
+  margin-left: -57.5px;
+  font-size: 281px;
+  line-height: 225px;
+  color: #f2f2f2;
+}
+
+@mixin categories {
+  margin-bottom: 20px;
+  padding: 22px 20px;
+  background: #f2f2f2;
+  &__logo {
+    float: left;
+    &:before {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: #68b738;
+      border-radius: 50%;
+    }
+  }
+  &__title {
+    display: inline-block;
+    margin-top: 7px;
+    margin-left: 12px;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+  }
+  &__description {
+    position: relative;
+    margin: 0;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 24px;
+    @include description-text;
+    @include grey-line;
+  }
+  &__catalog {
+    position: relative;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000;
+    @include arrow;
+  }
+}

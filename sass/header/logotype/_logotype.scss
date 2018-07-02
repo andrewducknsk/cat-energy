@@ -1,0 +1,12 @@
+.logotype {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 24px;
+  vertical-align: top;
+}
+
+@media (min-width: 768px) {
+  .logotype {
+    display: none;
+  }
+}

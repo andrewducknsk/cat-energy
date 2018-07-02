@@ -1,0 +1,19 @@
+.page-header {
+  position: relative;
+  min-height: 65px;
+  background: #fff;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    min-height: 85px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-header {
+    width: 1300px;
+    min-height: 115px;
+    margin: 0 auto;
+  }
+}

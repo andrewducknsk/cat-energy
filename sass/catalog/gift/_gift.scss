@@ -1,0 +1,59 @@
+.gift {
+  height: 365px;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  background: url("../../../img/catalog/gift-bg-m.jpg") no-repeat;
+  background-position: 20px 40px;
+  &__text {
+    padding: 0 65px;
+    padding-top: 170px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .gift {
+    height: 345px;
+    padding-top: 70px;
+    padding-bottom: 75px;
+    background: url("../../../img/catalog/gift-bg-t.jpg") no-repeat center;
+    background-position: 50% 70px;
+    background-size: 93.5% 200px;
+    &__text {
+      width: 165px;
+      margin: 0 auto;
+      margin-right: 120px;
+      padding: 0;
+      padding-top: 75px;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .gift {
+    vertical-align: bottom;
+    display: inline-block;
+    width: 245px;
+    height: 290px;
+    padding: 65px 40px 0;
+    background: url("../../../img/catalog/gift-bg-d.jpg") no-repeat center;
+    &:before {
+      content: '';
+      display: block;
+      width: 55px;
+      height: 60px;
+      margin: 0 auto;
+      background: url("../../../img/catalog/gift.svg");
+    }
+    &__text {
+      padding-top: 63px;
+      text-align: center;
+    }
+  }
+}

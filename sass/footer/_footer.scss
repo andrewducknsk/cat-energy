@@ -1,0 +1,28 @@
+.page-footer {
+  padding-top: 40px;
+  &__wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    padding-top: 65px;
+    padding-bottom: 62px;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding: 0 30px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-footer {
+    padding: 62px 0;
+    &__wrapper {
+      padding: 0 40px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.food {
+  padding-top: 27px;
+  text-align: center;
+  color: #fff;
+  &__title {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+  &__description {
+    margin: 0;
+    margin-bottom: 313px;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  .food {
+    padding-top: 58px;
+    width: 457px;
+    text-align: left;
+    color: #000;
+    &__title {
+      margin-bottom: 43px;
+      font-size: 60px;
+      line-height: 60px;
+    }
+    &__description {
+      margin-bottom: 60px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .food {
+    padding-top: 225px;
+    &__description {
+      margin-bottom: 70px;
+    }
+  }
+}

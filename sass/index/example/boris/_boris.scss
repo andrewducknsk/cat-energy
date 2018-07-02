@@ -1,0 +1,81 @@
+.boris {
+  margin-bottom: 35px;
+  &__title {
+    margin-bottom: 28px;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 27px;
+    padding-right: 5px;
+    @include description-text
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__costs {
+    width: 100%;
+    margin: 0;
+    margin-top: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .boris {
+    &__title {
+      font-size: 60px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__wrapper {
+      justify-content: start;
+    }
+    &__costs {
+      width: 192px;
+      margin-top: 13px;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .boris {
+    display: inline-block;
+    width: 570px;
+    vertical-align: top;
+    padding-right: 134px;
+    padding-left: 40px;
+    //background: #eaeaea;
+    &__title {
+      padding-left: 40px;
+    }
+    &__text {
+      margin-bottom: 70px;
+    }
+    &__wrapper {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 367px;
+    }
+    &__costs {
+      width: 325px;
+      margin-top: 60px;
+      text-align: left;
+    }
+    &__price {
+      margin-left: 55px;
+    }
+  }
+}

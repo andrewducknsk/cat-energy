@@ -1,0 +1,54 @@
+.target {
+  //@include example-text;
+  width: 124px;
+  height: 55px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  &__text {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  &__description {
+    display: block;
+    margin: 0 auto;
+    background: #f2f2f2;
+    width: 70px;
+    text-align: center;
+    text-transform: lowercase;
+    @include description-text;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .target {
+    width: 162px;
+    height: 72px;
+    margin-right: 5.94%;
+    &__text {
+      margin: 17.5px 0;
+      font-size: 30px;
+      line-height: 37px;
+    }
+    &__description {
+      width: 106px;
+      margin-top: -10px;
+      font-size: 14px;
+      line-height: 14px;
+      background: #fff;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .target {
+    margin: 0;
+    &__description {
+      background: #f2f2f2;
+    }
+  }
+}

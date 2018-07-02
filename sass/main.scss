@@ -1,0 +1,65 @@
+@import "sass/_scaffolding.scss",
+        "sass/_mixin.scss";
+
+// header
+@import "sass/header/_page-header.scss",
+        "sass/header/icon/_icon.scss",
+        "sass/header/logotype/_logotype.scss",
+        "sass/header/menu/_menu.scss";
+
+// index
+@import "sass/index/_page-main.scss",
+        "sass/index/advantages/_advantages.scss",
+        "sass/index/categories/_categories.scss",
+        "sass/index/contact/_contact.scss",
+        "sass/index/example/_example.scss",
+        "sass/index/functional-food/_functional-food.scss",
+        "sass/index/functional-food/food/_food.scss",
+        "sass/index/functional-food/program/_program.scss",
+
+        "sass/index/categories/_categories.scss",
+        "sass/index/categories/losing-weight/_losing-weight.scss",
+        "sass/index/categories/mass-gathering/_mass-gathering.scss",
+
+        "sass/index/advantages/_advantages.scss",
+
+        "sass/index/example/_example.scss",
+        "sass/index/example/boris/_boris.scss",
+        "sass/index/example/boris/target/_target.scss",
+        "sass/index/example/boris/time/_time.scss",
+        "sass/index/example/boris/toggle/_toggle.scss",
+        "sass/index/example/slider/_slider.scss",
+
+        "sass/index/map/_map.scss";
+
+// catalog
+@import "sass/catalog/catalog/_catalog.scss",
+        "sass/catalog/catalog/product/_product.scss",
+        "sass/catalog/catalog/product/description/_description.scss",
+        "sass/catalog/catalog/more/_more.scss",
+        "sass/catalog/extra-goods/_extra-goods.scss",
+        "sass/catalog/extra-goods/goods/_goods.scss",
+        "sass/catalog/gift/_gift.scss";
+
+//form
+@import "sass/form/program-selection/_program-selection.scss",
+        "sass/form/program-selection/questionnaire/_questionnaire.scss",
+        "sass/form/program-selection/questionnaire/cat/_cat.scss",
+        "sass/form/program-selection/questionnaire/cat/age-field/_age-field.scss",
+        "sass/form/program-selection/questionnaire/cat/name-field/_name-field.scss",
+        "sass/form/program-selection/questionnaire/cat/weight-field/_weight-field.scss",
+        "sass/form/program-selection/questionnaire/body/_body.scss",
+        "sass/form/program-selection/questionnaire/body/losing-weight-field/_losing-weight-field.scss",
+        "sass/form/program-selection/questionnaire/body/excess-weight-field/_excess-weight-field.scss",
+        "sass/form/program-selection/questionnaire/body/advice-field/_advice-field.scss",
+        "sass/form/program-selection/questionnaire/owner/_owner.scss",
+        "sass/form/program-selection/questionnaire/owner/email/_email.scss",
+        "sass/form/program-selection/questionnaire/owner/phone-number/_phone-number.scss",
+        "sass/form/program-selection/questionnaire/comment/_comment.scss",
+        "sass/form/program-selection/questionnaire/extra/_extra.scss";
+
+// footer
+@import "sass/footer/_footer.scss",
+        "sass/footer/copyright/_copyright.scss",
+        "sass/footer/logotype-footer/_logotype-footer.scss",
+        "sass/footer/social/_social.scss";

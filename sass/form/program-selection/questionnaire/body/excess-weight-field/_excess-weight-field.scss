@@ -1,0 +1,33 @@
+.excess-weight-field {
+  margin: 13px 0;
+  &__pin {
+    vertical-align: middle;
+    @include grey-pin;
+  }
+  &__area {
+    display: none;
+    &:checked~.excess-weight-field__pin:after {
+      @include green-pin;
+    }
+  }
+  &__text {
+    @include field-text;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .excess-weight-field {
+    &__pin {
+      @include grey-pin--tablet;
+    }
+    &__area {
+      &:checked~.excess-weight-field__pin:after {
+        @include green-pin--tablet;
+      }
+    }
+    &__text {
+      @include field-text--tablet;
+    }
+  }
+}

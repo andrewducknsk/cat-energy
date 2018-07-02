@@ -1,0 +1,39 @@
+.phone-number {
+  &__text {
+    @include field-text;
+  }
+  &__field {
+    width: 200px;
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 35px;
+    text-overflow: ellipsis;
+    border: 1px solid #e6e6e6;
+    background: url("../../../../../../img/form/phone.svg") no-repeat;
+    background-position: 95% 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .phone-number {
+    &__text {
+      @include field-text--tablet;
+    }
+    &__field {
+      width: 528px;
+      height: 52px;
+      padding-right: 45px;
+      background-position: 96.7% 13px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .phone-number {
+    display: inline-block;
+    width: 570px;
+    &__field {
+      width: 476px;
+    }
+  }
+}

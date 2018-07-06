@@ -1,5 +1,5 @@
 .comment {
-  padding: 15px 0;
+  padding: 15px 20px;
   &__title {
     position: relative;
     margin-bottom: 35px;
@@ -20,6 +20,11 @@
     padding: 14px;
     border: 1px solid #e6e6e6;
     outline: none;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444;
+    @include field--hover;
+    @include field--active;
     &::placeholder {
       @include field-text;
       color: #444;

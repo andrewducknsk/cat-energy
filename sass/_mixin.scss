@@ -57,7 +57,7 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin-right: 10px;
+  margin-right: 15px;
   border: 1px solid #cecece;
   border-radius: 50%;
 }
@@ -93,6 +93,31 @@
 @mixin field-text--tablet {
   font-size: 20px;
   line-height: 20px;
+}
+
+@mixin field--hover {
+  &:hover {
+    border-color: #cdcdcd;
+  }
+}
+
+@mixin field--active {
+  &:active {
+    border: 2px solid #444;
+  }
+}
+
+@mixin pin--hover {
+  &:hover {
+    border-color: #bcbcbc;
+  }
+}
+
+@mixin pin--active {
+  transition: ease .15s;
+  &:active {
+    opacity: .3;
+  }
 }
 
 @mixin after-before__pin {
@@ -137,7 +162,7 @@
     content: '';
     position: absolute;
     top: 8.335px;
-    right: -31%;
+    right: -31.5%;
     width: 17px;
     height: 2px;
     background: #3e4242;
@@ -145,13 +170,48 @@
   &:after {
     content: '';
     position: absolute;
-    top: 4px;
+    top: 0;
     right: -37%;
     width: 0;
     height: 0;
     border-width: 5.5px 0 5.5px 6px;
     border-style: solid;
     border-color: transparent #3e4242;
+  }
+}
+
+@mixin arrow--hover{
+  &:hover:before {
+    right: -39%;
+    width: 25px;
+    transition: right ease .25s, width ease .25s;
+  }
+  &:hover:after {
+    right: -44%;
+    transition: right ease .25s;
+  }
+}
+
+@mixin arrow--active {
+  &:active {
+    opacity: .3;
+    &:before,
+    &:after {
+      opacity: .3;
+    }
+  }
+}
+
+@mixin btn--hover {
+  &:hover {
+    background: #5eaa2f;
+  }
+}
+
+@mixin btn--active {
+  &:active {
+    color: #8fc46e;
+    background: #5eaa2f;
   }
 }
 

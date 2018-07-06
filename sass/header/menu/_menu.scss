@@ -1,7 +1,7 @@
 // non js
-.menu-nojs {
+.menu--no-js {
   .menu {
-    &__btn--open {
+    &__btn {
       display: none;
     }
     &__list {
@@ -28,12 +28,14 @@
 
 // closed
 .menu--closed {
+  border-bottom: 1px solid #e6e6e6;
   .menu {
     position: relative;
-    &__btn--open {
+    &__btn {
       position: absolute;
       top: 24px;
       right: 20px;
+      display: inline-block;
       width: 24px;
       height: 18px;
       padding: 0;
@@ -66,7 +68,7 @@
   z-index: 5;
   width: 100%;
   background: #fff;
-  &__btn--open {
+  &__btn {
     position: absolute;
     top: 24px;
     right: 20px;
@@ -112,6 +114,13 @@
     font-weight: 500;
     text-transform: uppercase;
     color: #000;
+    transition: ease .2s;
+    &:hover {
+      opacity: .6;
+    }
+    &:active {
+      opacity: .3;
+    }
   }
 }
 
@@ -119,8 +128,8 @@
   .menu--closed {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
-    padding-top: 22px;
+    padding: 22px 30px 0;
+    border: none;
     .menu {
       &__list {
         display: flex;
@@ -135,7 +144,7 @@
         line-height: 25px;
         font-weight: 400;
       }
-      &__btn--open {
+      &__btn {
         display: none;
       }
     }

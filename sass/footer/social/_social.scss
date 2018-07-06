@@ -5,11 +5,22 @@
   &__links {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 125px;
     margin: 0 auto;
   }
   &__item {
     display: inline-block;
+  }
+  &__icon {
+    fill: #666;
+    transition: ease .2s;
+    &:hover {
+      fill: #68b738;
+    }
+    &:active {
+      opacity: .6;
+    }
   }
 }
 

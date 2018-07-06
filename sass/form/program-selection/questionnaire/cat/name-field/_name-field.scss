@@ -7,7 +7,17 @@
     width: 228px;
     height: 45px;
     padding: 13px 15px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444;
     border: 1px solid #e6e6e6;
+    transition: border-color ease .3s;
+    outline: none;
+    @include field--hover;
+    @include field--active;
+    //&:valid {
+    //  border: 2px solid red;
+    //}
   }
 }
 

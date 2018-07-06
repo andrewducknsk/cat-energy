@@ -8,10 +8,16 @@
     height: 40px;
     padding-left: 5px;
     padding-right: 35px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444;
     text-overflow: ellipsis;
     border: 1px solid #e6e6e6;
     background: url("../../../../../../img/form/mail.svg") no-repeat;
     background-position: 94% 13px;
+    outline: none;
+    @include field--hover;
+    @include field--active;
   }
 }
 

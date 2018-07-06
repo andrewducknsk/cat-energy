@@ -1,6 +1,13 @@
 .logotype-footer {
   margin-bottom: 30px;
   text-align: center;
+  transition: ease .2s;
+  &:hover {
+    opacity: .8;
+  }
+  &:active {
+    opacity: .6;
+  }
 }
 
 @media (min-width: 768px) {

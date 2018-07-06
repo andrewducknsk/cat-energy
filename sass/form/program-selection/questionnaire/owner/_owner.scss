@@ -1,6 +1,5 @@
 .owner {
-  padding-top: 30px;
-  padding-bottom: 15px;
+  padding: 30px 20px 15px;
   &__title {
     position: relative;
     margin-bottom: 30px;
@@ -18,8 +17,7 @@
 
 @media (min-width: 768px) {
   .owner {
-    padding-top: 80px;
-    padding-bottom: 35px;
+    padding: 80px 0 35px;
     &__title {
       margin-bottom: 75px;
       font-size: 36px;

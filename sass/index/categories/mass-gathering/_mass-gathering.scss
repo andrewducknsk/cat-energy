@@ -46,6 +46,8 @@
     text-transform: uppercase;
     color: #000;
     @include arrow;
+    @include arrow--hover;
+    @include arrow--active;
   }
 }
 

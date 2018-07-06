@@ -1,6 +1,5 @@
 .extra {
-  padding-top: 15px;
-  padding-bottom: 21px;
+  padding: 15px 20px 21px;
   &__title {
     position: relative;
     margin-bottom: 30px;
@@ -17,6 +16,7 @@
     display: inline-block;
     width: 100%;
     margin-bottom: 13px;
+    @include pin--active;
   }
   &__pin {
     position: relative;
@@ -26,6 +26,7 @@
     margin-right: 10px;
     vertical-align: middle;
     border: 1px solid #cfcfcf;
+    @include pin--hover;
   }
   &__area {
     display: none;
@@ -50,8 +51,7 @@
 
 @media (min-width: 768px) {
   .extra {
-    padding-top: 35px;
-    padding-bottom: 54px;
+    padding: 35px 0 54px;
     &__title {
       margin-bottom: 75px;
       font-size: 36px;

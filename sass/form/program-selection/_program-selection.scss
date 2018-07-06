@@ -1,19 +1,16 @@
 .program-selection {
-  padding-top: 24px;
-  padding-bottom: 32px;
-  &__wrapper {
-    padding: 0 20px;
-  }
+  padding: 20px 0 32px;
   &__title {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     padding: 0 20px;
     font-size: 36px;
     line-height: 60px;
     font-weight: 400;
   }
   &__description {
-    width: 230px;
+    width: 270px;
     margin: 0;
+    padding: 0 20px;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;

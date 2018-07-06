@@ -2,6 +2,7 @@
   &__pin {
     vertical-align: middle;
     @include grey-pin;
+    @include pin--hover;
   }
   &__area {
     display: none;
@@ -13,6 +14,7 @@
     @include field-text;
     margin-right: 0;
   }
+  @include pin--active;
 }
 
 @media (min-width: 768px) {

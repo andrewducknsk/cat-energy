@@ -7,7 +7,13 @@
     width: 166px;
     height: 45px;
     padding: 13px 15px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444;
     border: 1px solid #e6e6e6;
+    outline: none;
+    @include field--hover;
+    @include field--active;
   }
 }
 

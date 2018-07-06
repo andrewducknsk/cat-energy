@@ -36,6 +36,15 @@
     text-transform: uppercase;
     color: #444;
     background: #f2f2f2;
+    transition: background ease .3s, color ease .15s;
+    &:hover {
+      background: #ebebeb;
+    }
+    &:active {
+      color: #b9b9b9;
+      background: #ebebeb;
+
+    }
   }
 }
 

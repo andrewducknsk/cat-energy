@@ -7,6 +7,9 @@
     text-transform: uppercase;
     background: #68b738;
     color: #fff;
+    transition: background ease .3s, color ease .15s;
+    @include btn--hover;
+    @include btn--active;
   }
 }
 

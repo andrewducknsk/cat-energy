@@ -5,6 +5,13 @@
   margin-bottom: 14px;
   padding-left: 20px;
   vertical-align: top;
+  transition: ease .15s;
+  &:hover {
+    opacity: .8;
+  }
+  &:active {
+    opacity: .6;
+  }
 }
 
 @media (min-width: 768px) {

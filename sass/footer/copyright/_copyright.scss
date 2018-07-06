@@ -3,14 +3,27 @@
   justify-content: space-between;
   align-items: center;
   margin: 22px 0;
-  &__logo {
-    height: 34px;
-  }
+  transition: ease .2s;
   &__link {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 16px;
     color: #444;
+    &:hover {
+      .copyright__icon {
+        fill: #68b738;
+      }
+    }
+  }
+  &__icon {
+    fill: #666;
+    transition: ease .2s;
+    &:hover {
+      fill: #68b738;
+    }
+  }
+  &:active {
+    opacity: .3;
   }
 }
 

@@ -63,9 +63,9 @@
                 iconImageOffset: [-24, -50]
             });
 
-        myMap.geoObjects
-            .add(myPlacemark);
-
         myMap.behaviors.disable('scrollZoom');
+        myMap.behaviors.disable('drag');
+        myMap.geoObjects.add(myPlacemark);
+
     });
 }());

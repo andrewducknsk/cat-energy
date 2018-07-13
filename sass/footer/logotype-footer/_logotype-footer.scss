@@ -2,12 +2,8 @@
   margin-bottom: 30px;
   text-align: center;
   transition: ease .2s;
-  &:hover {
-    opacity: .8;
-  }
-  &:active {
-    opacity: .6;
-  }
+  @include logo--hover;
+  @include logo--active;
 }
 
 @media (min-width: 768px) {

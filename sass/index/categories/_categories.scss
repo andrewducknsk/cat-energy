@@ -15,6 +15,7 @@
 
 @media (min-width: 1300px) {
   .categories {
+    @include centering--desktop;
     padding-top: 80px;
     &__wrapper {
       padding: 0 40px;

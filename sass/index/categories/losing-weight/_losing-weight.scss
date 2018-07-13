@@ -19,6 +19,9 @@
     position: absolute;
     top: -3px;
     left: 8px;
+    width: 36px;
+    height: 50px;
+    transform: scaleX(-1);
   }
   &__title {
     display: inline-block;
@@ -66,6 +69,8 @@
     &__icon {
       top: -13px;
       left: 30px;
+      width: 140px;
+      height: 194px;
     }
     &__title {
       margin: 0;
@@ -83,11 +88,14 @@
     &__catalog {
       font-size: 20px;
       line-height: 20px;
+      @include arrow--hover-t;
       &:before {
         top: 13.335px;
+        left: 132px;
       }
       &:after {
         top: 9px;
+        left: 149px;
       }
     }
   }
@@ -111,6 +119,8 @@
     &__icon {
       top: -6px;
       left: 14px;
+      width: 70px;
+      height: 97px;
     }
     &__title {
       margin-top: 34px;

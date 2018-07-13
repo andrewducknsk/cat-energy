@@ -6,12 +6,8 @@
   padding-left: 20px;
   vertical-align: top;
   transition: ease .15s;
-  &:hover {
-    opacity: .8;
-  }
-  &:active {
-    opacity: .6;
-  }
+  @include logo--hover;
+  @include logo--active;
 }
 
 @media (min-width: 768px) {

@@ -32,7 +32,7 @@
       line-height: 60px;
     }
     &__description {
-      width: 365px;
+      width: 400px;
       font-size: 20px;
       line-height: 30px;
     }
@@ -48,6 +48,10 @@
     }
     &__title {
       padding-left: 40px;
+    }
+    &__description {
+      width: 100%;
+      padding: 0;
     }
   }
 }

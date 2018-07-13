@@ -1,10 +1,10 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 22px 0;
   transition: ease .2s;
   &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 16px;
@@ -16,6 +16,8 @@
     }
   }
   &__icon {
+    width: 27px;
+    height: 34px;
     fill: #666;
     transition: ease .2s;
     &:hover {
@@ -29,11 +31,10 @@
 
 @media (min-width: 768px) {
   .copyright {
-    justify-content: start;
     margin: 0;
     margin-top: -8px;
-   &__link {
-    margin-right: 23px;
-   }
+    &__icon {
+      margin-left: 23px;
+    }
   }
 }

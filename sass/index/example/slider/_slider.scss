@@ -1,27 +1,119 @@
+.slider__radio--before[type="radio"]:checked~.slider__slide--before {
+  display: block;
+  margin: 0 auto;
+}
+.slider__radio--after[type="radio"]:checked~.slider__slide--after {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider__radio--before[type="radio"]:checked~.slider__pin--before:before {
+  @include after-before__pin;
+  left: 5px;
+}
+
+.slider__radio--after[type="radio"]:checked~.slider__pin--after:after {
+  @include after-before__pin;
+  right: 5px;
+}
+
 .slider {
-  height: 260px;
   text-align: center;
   overflow: hidden;
-  &__radio--before,
-  &__radio--after{
+  &__slide,
+  &__radio {
     display: none;
   }
-  &__slide-1,
-  &__slide-2 {
-    display: none;
+  &__slide {
+    height: 250px;
+  }
+  &__text {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  &__pin {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 12px;
+    background: #fff;
+    border: 1px solid #cdcdcd;
+    &--before {
+      margin-left: 20px;
+      border-right: none;
+      border-radius: 5px 0 0 5px;
+    }
+    &--after {
+      margin-right: 20px;
+      border-left: none;
+      border-radius: 0 5px 5px 0;
+    }
   }
 }
 
 @media (min-width: 768px) {
   .slider {
-    //background: #eaeaea;
+    position: relative;
+    height: 710px;
+    padding-top: 80px;
+    &__pin,
+    &__toggle{
+      display: none;
+    }
+    &__slide {
+      height: 640px;
+      display: block;
+      &--before {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        clip-path: inset(0 50% 0 0);
+        background: #fff;
+        div {
+          height: 460px;
+          margin-top: -340px;
+          background: #f2f2f2;
+        }
+      }
+      &--after {
+        width: 100%;
+        background: #fff;
+        div {
+          height: 460px;
+          margin-top: -340px;
+          background: #eaeaea;
+        }
+      }
+    }
+    &__img--before {
+      margin-left: 25px;
+    }
+    &__img--after {
+      margin-top: 18px;
+      margin-left: -35px;
+    }
   }
 }
 
 @media (min-width: 1300px) {
   .slider {
     display: inline-block;
-    width: 650px;
-    //min-height: 595px;
+    width: 730px;
+    height: 689px;
+    margin-top: -240px;
+    padding: 0;
+    &__slide {
+      height: 690px;
+      &--before {
+        top: 0;
+      }
+      div {
+        height: 521px;
+        margin-top: -347px;
+      }
+    }
   }
 }

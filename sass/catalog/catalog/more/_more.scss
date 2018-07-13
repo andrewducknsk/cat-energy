@@ -30,7 +30,7 @@
     @include description-product;
   }
   &__link {
-    padding: 9.5px 95px;
+    padding: 9.5px 92px;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -53,6 +53,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: 289px;
     height: 430px;
     margin-top: 140px;
     padding: 0 38px;
@@ -78,8 +79,8 @@
       font-size: 16px;
     }
     &__link {
-      margin-bottom: 40px;
-      padding: 10px 78px;
+      margin-bottom: 25px;
+      padding: 10px 57px;
     }
   }
 }
@@ -92,6 +93,7 @@
       background: #e6e6e6;
     }
     &__link {
+      margin-bottom: 40px;
       padding: 10px 0;
     }
   }

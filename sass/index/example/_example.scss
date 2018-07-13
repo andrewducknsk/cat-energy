@@ -2,6 +2,13 @@
   padding-top: 22px;
   padding-bottom: 40px;
   background: #f2f2f2;
+  &__title {
+    margin-bottom: 28px;
+    padding-left: 20px;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+  }
   &__wrapper {
     padding: 0 20px;
   }
@@ -14,19 +21,28 @@
     border-top: 1px solid #e6e6e6;
     background: none;
     &__wrapper {
-      padding: 0 30px;
+      padding: 0;
+    }
+    &__title {
+      padding-left: 30px;
+      font-size: 60px;
     }
   }
 }
 
 @media (min-width: 1300px) {
   .example {
+    @include centering--desktop;
+    padding-top: 60px;
+    border-top: none;
     &__wrapper {
-      padding: 0;
-    }
-    &__wrapper--desctop {
       padding-top: 70px;
+      //padding-bottom: 60px;
       background: #f2f2f2;
+    }
+    &__title {
+      margin-bottom: 55px;
+      padding-left: 40px;
     }
   }
 }

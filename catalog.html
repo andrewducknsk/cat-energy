@@ -2,226 +2,254 @@
 <html lang="ru">
 <include src="html/head.html"></include>
 <body>
+	<include src="html/svg-sprite.html"></include>
 	<include src="html/header.html"></include>
 	<main class="page-main">
-		<section class="catalog">
-			<div class="catalog__wrapper">
-				<h1 class="catalog__title">Каталог продукции</h1>
-				<div class="product">
-					<article class="product__item">
-						<picture>
-							<source media="(min-width: 768px)" srcset="img/catalog/product-1-t.png">
-							<img class="product__img" src="img/catalog/product-1-m.jpg" alt="Cat Energy Pro 500г - Курица">
-						</picture>
-						<h2 class="product__title">Cat Energy Pro 500г</h2>
-						<div class="description">
-							<div class="description__size">
-								<p class="description__text">Объем</p>
-								<p class="description__text">500 г</p>
+		<div class="page-main__wrapper">
+			<section class="catalog">
+				<div class="catalog__wrapper">
+					<h1 class="catalog__title">Каталог продукции</h1>
+					<div class="product">
+						<article class="product__item">
+							<picture>
+								<source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/product-1-t.webp">
+								<source type="image/webp" srcset="img/catalog/product-1-m.webp">
+
+								<source media="(min-width: 768px)" srcset="img/catalog/product-1-t.png">
+								<img class="product__img" src="img/catalog/product-1-m.jpg" alt="Cat Energy Pro 500г - Курица">
+							</picture>
+							<h2 class="product__title">Cat Energy Pro 500г</h2>
+							<div class="description">
+								<div class="description__size">
+									<p class="description__text">Объем</p>
+									<p class="description__text">500 г</p>
+								</div>
+								<div class="description__taste">
+									<p class="description__text">Вкус</p>
+									<p class="description__text">Курица</p>
+								</div>
+								<div class="description__price">
+									<p class="description__text">Цена</p>
+									<p class="description__text">700 Р.</p>
+								</div>
 							</div>
-							<div class="description__taste">
-								<p class="description__text">Вкус</p>
-								<p class="description__text">Курица</p>
+							<a class="btn-order" href="#">Заказать</a>
+						</article>
+						<article class="product__item">
+							<picture>
+								<source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/product-2-t.webp">
+								<source type="image/webp" srcset="img/catalog/product-2-m.webp">
+
+								<source media="(min-width: 768px)" srcset="img/catalog/product-2-t.png">
+								<img class="product__img" src="img/catalog/product-2-m.jpg" alt="Cat Energy Pro 1000г - Курица">
+							</picture>
+							<h2 class="product__title">Cat Energy Pro 1000г</h2>
+							<div class="description">
+								<div class="description__size">
+									<p class="description__text">Объем</p>
+									<p class="description__text">1000 г</p>
+								</div>
+								<div class="description__taste">
+									<p class="description__text">Вкус</p>
+									<p class="description__text">Курица</p>
+								</div>
+								<div class="description__price">
+									<p class="description__text">Цена</p>
+									<p class="description__text">1000 Р.</p>
+								</div>
 							</div>
-							<div class="description__price">
-								<p class="description__text">Цена</p>
-								<p class="description__text">700 Р.</p>
+							<a class="btn-order" href="#">Заказать</a>
+						</article>
+						<article class="product__item">
+							<picture>
+								<source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/product-3-t.webp">
+								<source type="image/webp" srcset="img/catalog/product-3-m.webp">
+
+								<source media="(min-width: 768px)" srcset="img/catalog/product-3-t.png">
+								<img class="product__img" src="img/catalog/product-3-m.jpg" alt="Cat Energy Pro 500г - Рыба">
+							</picture>
+							<h2 class="product__title">Cat Energy Pro 500г</h2>
+							<div class="description">
+								<div class="description__size">
+									<p class="description__text">Объем</p>
+									<p class="description__text">500 г</p>
+								</div>
+								<div class="description__taste">
+									<p class="description__text">Вкус</p>
+									<p class="description__text">Рыба</p>
+								</div>
+								<div class="description__price">
+									<p class="description__text">Цена</p>
+									<p class="description__text">700 Р.</p>
+								</div>
 							</div>
+							<a class="btn-order" href="#">Заказать</a>
+						</article>
+						<article class="product__item">
+							<picture>
+								<source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/product-4-t.webp">
+								<source type="image/webp" srcset="img/catalog/product-4-m.webp">
+
+								<source media="(min-width: 768px)" srcset="img/catalog/product-4-t.png">
+								<img class="product__img" src="img/catalog/product-4-m.jpg" alt="Cat Energy Pro 1000г - Рыба">
+							</picture>
+							<h2 class="product__title">Cat Energy Pro 1000г</h2>
+							<div class="description">
+								<div class="description__size">
+									<p class="description__text">Объем</p>
+									<p class="description__text">1000 г</p>
+								</div>
+								<div class="description__taste">
+									<p class="description__text">Вкус</p>
+									<p class="description__text">Рыба</p>
+								</div>
+								<div class="description__price">
+									<p class="description__text">Цена</p>
+									<p class="description__text">1000 Р.</p>
+								</div>
+							</div>
+							<a class="btn-order" href="#">Заказать</a>
+						</article>
+						<article class="product__item">
+							<picture>
+								<source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/product-5-t.webp">
+								<source type="image/webp" srcset="img/catalog/product-5-m.webp">
+
+								<source media="(min-width: 768px)" srcset="img/catalog/product-5-t.png">
+								<img class="product__img" src="img/catalog/product-5-m.jpg" alt="Cat Energy Slim 500г - Гречка">
+							</picture>
+							<h2 class="product__title">Cat Energy Slim 500г</h2>
+							<div class="description">
+								<div class="description__size">
+									<p class="description__text">Объем</p>
+									<p class="description__text">500 г</p>
+								</div>
+								<div class="description__taste">
+									<p class="description__text">Вкус</p>
+									<p class="description__text">Гречка</p>
+								</div>
+								<div class="description__price">
+									<p class="description__text">Цена</p>
+									<p class="description__text">400 Р.</p>
+								</div>
+							</div>
+							<a class="btn-order" href="#">Заказать</a>
+						</article>
+						<article class="product__item">
+							<picture>
+								<source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/product-6-t.webp">
+								<source type="image/webp" srcset="img/catalog/product-6-m.webp">
+
+								<source media="(min-width: 768px)" srcset="img/catalog/product-6-t.png">
+								<img class="product__img" src="img/catalog/product-6-m.jpg" alt="Cat Energy Slim 1000г - Гречка">
+							</picture>
+							<h2 class="product__title">Cat Energy Slim 1000г</h2>
+							<div class="description">
+								<div class="description__size">
+									<p class="description__text">Объем</p>
+									<p class="description__text">1000 г</p>
+								</div>
+								<div class="description__taste">
+									<p class="description__text">Вкус</p>
+									<p class="description__text">Гречка</p>
+								</div>
+								<div class="description__price">
+									<p class="description__text">Цена</p>
+									<p class="description__text">700 Р.</p>
+								</div>
+							</div>
+							<a class="btn-order" href="#">Заказать</a>
+						</article>
+						<article class="product__item">
+							<picture>
+								<source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/product-7-t.webp">
+								<source type="image/webp" srcset="img/catalog/product-7-m.webp">
+
+								<source media="(min-width: 768px)" srcset="img/catalog/product-7-t.png">
+								<img class="product__img" src="img/catalog/product-7-m.jpg" alt="Cat Energy Slim 500г - Рис">
+							</picture>
+							<h2 class="product__title">Cat Energy Slim 500г</h2>
+							<div class="description">
+								<div class="description__size">
+									<p class="description__text">Объем</p>
+									<p class="description__text">500 г</p>
+								</div>
+								<div class="description__taste">
+									<p class="description__text">Вкус</p>
+									<p class="description__text">Рис</p>
+								</div>
+								<div class="description__price">
+									<p class="description__text">Цена</p>
+									<p class="description__text">500 Р.</p>
+								</div>
+							</div>
+							<a class="btn-order" href="#">Заказать</a>
+						</article>
+						<div class="more">
+							<h3 class="more__title">Показать еще 100500 товаров</h3>
+							<p class="more__text">На самом деле вкусов гораздо больше!</p>
+							<a class="more__link" href="#">Показать Все</a>
 						</div>
-						<a class="btn-order" href="#">Заказать</a>
-					</article>
-					<article class="product__item">
-						<picture>
-							<source media="(min-width: 768px)" srcset="img/catalog/product-2-t.png">
-							<img class="product__img" src="img/catalog/product-2-m.jpg" alt="Cat Energy Pro 1000г - Курица">
-						</picture>
-						<h2 class="product__title">Cat Energy Pro 1000г</h2>
-						<div class="description">
-							<div class="description__size">
-								<p class="description__text">Объем</p>
-								<p class="description__text">1000 г</p>
-							</div>
-							<div class="description__taste">
-								<p class="description__text">Вкус</p>
-								<p class="description__text">Курица</p>
-							</div>
-							<div class="description__price">
-								<p class="description__text">Цена</p>
-								<p class="description__text">1000 Р.</p>
-							</div>
-						</div>
-						<a class="btn-order" href="#">Заказать</a>
-					</article>
-					<article class="product__item">
-						<picture>
-							<source media="(min-width: 768px)" srcset="img/catalog/product-3-t.png">
-							<img class="product__img" src="img/catalog/product-3-m.jpg" alt="Cat Energy Pro 500г - Рыба">
-						</picture>
-						<h2 class="product__title">Cat Energy Pro 500г</h2>
-						<div class="description">
-							<div class="description__size">
-								<p class="description__text">Объем</p>
-								<p class="description__text">500 г</p>
-							</div>
-							<div class="description__taste">
-								<p class="description__text">Вкус</p>
-								<p class="description__text">Рыба</p>
-							</div>
-							<div class="description__price">
-								<p class="description__text">Цена</p>
-								<p class="description__text">700 Р.</p>
-							</div>
-						</div>
-						<a class="btn-order" href="#">Заказать</a>
-					</article>
-					<article class="product__item">
-						<picture>
-							<source media="(min-width: 768px)" srcset="img/catalog/product-4-t.png">
-							<img class="product__img" src="img/catalog/product-4-m.jpg" alt="Cat Energy Pro 1000г - Рыба">
-						</picture>
-						<h2 class="product__title">Cat Energy Pro 1000г</h2>
-						<div class="description">
-							<div class="description__size">
-								<p class="description__text">Объем</p>
-								<p class="description__text">1000 г</p>
-							</div>
-							<div class="description__taste">
-								<p class="description__text">Вкус</p>
-								<p class="description__text">Рыба</p>
-							</div>
-							<div class="description__price">
-								<p class="description__text">Цена</p>
-								<p class="description__text">1000 Р.</p>
-							</div>
-						</div>
-						<a class="btn-order" href="#">Заказать</a>
-					</article>
-					<article class="product__item">
-						<picture>
-							<source media="(min-width: 768px)" srcset="img/catalog/product-5-t.png">
-							<img class="product__img" src="img/catalog/product-5-m.jpg" alt="Cat Energy Slim 500г - Гречка">
-						</picture>
-						<h2 class="product__title">Cat Energy Slim 500г</h2>
-						<div class="description">
-							<div class="description__size">
-								<p class="description__text">Объем</p>
-								<p class="description__text">500 г</p>
-							</div>
-							<div class="description__taste">
-								<p class="description__text">Вкус</p>
-								<p class="description__text">Гречка</p>
-							</div>
-							<div class="description__price">
-								<p class="description__text">Цена</p>
-								<p class="description__text">400 Р.</p>
-							</div>
-						</div>
-						<a class="btn-order" href="#">Заказать</a>
-					</article>
-					<article class="product__item">
-						<picture>
-							<source media="(min-width: 768px)" srcset="img/catalog/product-6-t.png">
-							<img class="product__img" src="img/catalog/product-6-m.jpg" alt="Cat Energy Slim 1000г - Гречка">
-						</picture>
-						<h2 class="product__title">Cat Energy Slim 1000г</h2>
-						<div class="description">
-							<div class="description__size">
-								<p class="description__text">Объем</p>
-								<p class="description__text">1000 г</p>
-							</div>
-							<div class="description__taste">
-								<p class="description__text">Вкус</p>
-								<p class="description__text">Гречка</p>
-							</div>
-							<div class="description__price">
-								<p class="description__text">Цена</p>
-								<p class="description__text">700 Р.</p>
-							</div>
-						</div>
-						<a class="btn-order" href="#">Заказать</a>
-					</article>
-					<article class="product__item">
-						<picture>
-							<source media="(min-width: 768px)" srcset="img/catalog/product-7-t.png">
-							<img class="product__img" src="img/catalog/product-7-m.jpg" alt="Cat Energy Slim 500г - Рис">
-						</picture>
-						<h2 class="product__title">Cat Energy Slim 500г</h2>
-						<div class="description">
-							<div class="description__size">
-								<p class="description__text">Объем</p>
-								<p class="description__text">500 г</p>
-							</div>
-							<div class="description__taste">
-								<p class="description__text">Вкус</p>
-								<p class="description__text">Рис</p>
-							</div>
-							<div class="description__price">
-								<p class="description__text">Цена</p>
-								<p class="description__text">500 Р.</p>
-							</div>
-						</div>
-						<a class="btn-order" href="#">Заказать</a>
-					</article>
-					<div class="more">
-						<h3 class="more__title">Показать еще 100500 товаров</h3>
-						<p class="more__text">На самом деле вкусов гораздо больше!</p>
-						<a class="more__link" href="#">Показать Все</a>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="extra-goods">
-			<div class="extra-goods__wrapper">
-				<h2 class="extra-goods__title">Дополнительные товары</h2>
-				<article class="goods">
-					<h3 class="goods__title">Сахарозаменитель</h3>
-					<div class="description">
-						<div class="description__pack">
-							<p class="description__text">1 упаковка (100 г)</p>
-							<p class="description__text">100 Р.</p>
+			</section>
+			<section class="extra-goods">
+				<div class="extra-goods__wrapper">
+					<h2 class="extra-goods__title">Дополнительные товары</h2>
+					<article class="goods">
+						<h3 class="goods__title">Сахарозаменитель</h3>
+						<div class="description">
+							<div class="description__pack">
+								<p class="description__text">1 упаковка (100 г)</p>
+								<p class="description__text">100 Р.</p>
+							</div>
 						</div>
-					</div>
-					<a class="btn-order" href="#">Заказать</a>
-				</article>
-				<article class="goods">
-					<h3 class="goods__title">Питьевая вода</h3>
-					<div class="description">
-						<div class="description__pack">
-							<p class="description__text">5 литров</p>
-							<p class="description__text">50 Р.</p>
+						<a class="btn-order" href="#">Заказать</a>
+					</article>
+					<article class="goods">
+						<h3 class="goods__title">Питьевая вода</h3>
+						<div class="description">
+							<div class="description__pack">
+								<p class="description__text">5 литров</p>
+								<p class="description__text">50 Р.</p>
+							</div>
 						</div>
-					</div>
-					<a class="btn-order" href="#">Заказать</a>
-				</article>
-				<article class="goods">
-					<h3 class="goods__title">Молоко</h3>
-					<div class="description">
-						<div class="description__pack">
-							<p class="description__text">1 литр</p>
-							<p class="description__text">100 Р.</p>
+						<a class="btn-order" href="#">Заказать</a>
+					</article>
+					<article class="goods">
+						<h3 class="goods__title">Молоко</h3>
+						<div class="description">
+							<div class="description__pack">
+								<p class="description__text">1 литр</p>
+								<p class="description__text">100 Р.</p>
+							</div>
 						</div>
-					</div>
-					<a class="btn-order" href="#">Заказать</a>
-				</article>
-				<article class="goods">
-					<h3 class="goods__title">Витамины</h3>
-					<div class="description">
-						<div class="description__pack">
-							<p class="description__text">1 упаковка (30 г)</p>
-							<p class="description__text">300 Р.</p>
+						<a class="btn-order" href="#">Заказать</a>
+					</article>
+					<article class="goods">
+						<h3 class="goods__title">Витамины</h3>
+						<div class="description">
+							<div class="description__pack">
+								<p class="description__text">1 упаковка (30 г)</p>
+								<p class="description__text">300 Р.</p>
+							</div>
 						</div>
-					</div>
-					<a class="btn-order" href="#">Заказать</a>
-				</article>
-			</div>
-		</section>
-		<section class="gift">
-			<p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
-		</section>
-		<include src="html/contact.html"></include>
+						<a class="btn-order" href="#">Заказать</a>
+					</article>
+				</div>
+			</section>
+			<section class="gift">
+				<svg class="gift__icon">
+					<use xlink:href="#icon-gift"></use>
+				</svg>
+				<p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+			</section>
+			<include src="html/contact.html"></include>
+		</div>
 	</main>
 	<include src="html/map.html"></include>
 	<include src="html/footer.html"></include>
+	<script src="js/picturefill.js"></script>
 	<script src="js/menu-toggle.js"></script>
 </body>
 </html>

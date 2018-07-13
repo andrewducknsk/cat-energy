@@ -1,7 +1,7 @@
 .functional-food {
   position: relative;
   height: 500px;
-  background: url('../img/index/bg-mobile.jpg') no-repeat top;
+  background: url('../img/index/bg-m.jpg') no-repeat top;
   &__wrapper {
     padding: 0 20px;
   }
@@ -17,7 +17,7 @@
 @media (min-width: 768px) {
   .functional-food {
     height: 865px;
-    background: url("../../../img/index/bg-t.jpg") no-repeat bottom;
+    background: url("../img/index/bg-t.jpg") no-repeat bottom;
     &__wrapper {
       padding: 0 120px;
     }
@@ -31,9 +31,10 @@
   .functional-food {
     height: 697px;
     margin-top: -115px;
-    background: url("../../../img/index/bg-d.jpg") no-repeat;
-    background-position: 111% 0;
+    background: url("../img/index/bg-d.jpg") no-repeat;
+    background-position: 100% 0;
     &__wrapper {
+      @include centering--desktop;
       padding: 0 120px;
     }
     &__preview {

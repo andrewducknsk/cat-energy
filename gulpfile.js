@@ -13,7 +13,7 @@ let gulp = require('gulp'),
     include = require('posthtml-include'),
     del = require('del'),
     run = require('run-sequence');
-    /*watch = require('gulp-watch');*/
+
 
 gulp.task('style', function () {
   gulp.src('sass/**/*.scss')

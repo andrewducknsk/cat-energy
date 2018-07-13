@@ -46,6 +46,7 @@
   }
   &__text {
     @include field-text;
+    vertical-align: middle;
   }
 }
 

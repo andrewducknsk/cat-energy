@@ -2,7 +2,7 @@
   padding-top: 25px;
   padding-bottom: 22px;
   border: 1px solid #d9d9d9;
-  &__links {
+  &__list {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -15,6 +15,28 @@
   &__icon {
     fill: #666;
     transition: ease .2s;
+    &--vk {
+      width: 32px;
+      height: 32px;
+    }
+    &--ins {
+      width: 23px;
+      height: 23px;
+      stroke: #666;
+      stroke-width: 3px;
+      &:hover {
+        stroke: #68b738;
+      }
+    }
+    &--fb {
+      width: 14px;
+      height: 28px;
+      stroke: #666;
+      stroke-width: 20px;
+      &:hover {
+        stroke: #68b738;
+      }
+    }
     &:hover {
       fill: #68b738;
     }
@@ -28,6 +50,5 @@
   .social {
     padding: 0;
     border: none;
-
   }
 }

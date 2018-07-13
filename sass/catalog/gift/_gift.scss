@@ -1,12 +1,15 @@
 .gift {
+  width: 320px;
   height: 365px;
+  margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 35px;
-  background: url("../../../img/catalog/gift-bg-m.jpg") no-repeat;
+  background: url("../img/catalog/gift-bg-m.jpg") no-repeat;
   background-position: 20px 40px;
   &__text {
-    padding: 0 65px;
-    padding-top: 170px;
+    width: 180px;
+    margin: 0 auto;
+    padding-top: 45px;
     text-align: center;
     font-size: 16px;
     line-height: 20px;
@@ -14,22 +17,32 @@
     font-weight: 400;
     color: #fff;
   }
+  &__icon {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 65px auto 0;
+  }
 }
 
 @media (min-width: 768px) {
   .gift {
     height: 345px;
+    width: 708px;
     padding-top: 70px;
     padding-bottom: 75px;
-    background: url("../../../img/catalog/gift-bg-t.jpg") no-repeat center;
+    background: url("../img/catalog/gift-bg-t.jpg") no-repeat center;
     background-position: 50% 70px;
-    background-size: 93.5% 200px;
+    &__icon {
+      display: inline-block;
+      margin: 65px 0 0 89px;
+    }
     &__text {
+      display: inline-block;
       width: 165px;
-      margin: 0 auto;
-      margin-right: 120px;
+      margin-left: 240px;
       padding: 0;
-      padding-top: 75px;
+      padding-top: 15px;
       text-align: left;
     }
   }
@@ -41,18 +54,17 @@
     display: inline-block;
     width: 245px;
     height: 290px;
+    margin-bottom: 80px;
     padding: 65px 40px 0;
-    background: url("../../../img/catalog/gift-bg-d.jpg") no-repeat center;
-    &:before {
-      content: '';
+    background: url("../img/catalog/gift-bg-d.jpg") no-repeat center;
+    &__icon {
       display: block;
-      width: 55px;
-      height: 60px;
       margin: 0 auto;
-      background: url("../../../img/catalog/gift.svg");
+      margin-bottom: 60px;
     }
     &__text {
-      padding-top: 63px;
+      margin: 0;
+      padding: 0;
       text-align: center;
     }
   }

@@ -47,7 +47,6 @@
   }
   &__text {
     margin: 0;
-    margin-left: 20px;
     padding-top: 3px;
     @include  description-text;
   }
@@ -95,6 +94,7 @@
     &__logo {
       position: relative;
       width: 80px;
+      height: 80px;
       float: none;
       &:before {
         width: 80px;
@@ -105,8 +105,8 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      margin-top: -15px;
-      margin-left: -12.5px;
+
+      margin-top: -15.5px;
     }
     &__text {
       width: 75.5%;
@@ -120,6 +120,8 @@
 
 @media (min-width: 1300px) {
   .advantages {
+    padding-bottom: 0;
+    @include centering--desktop;
     &__wrapper {
       padding: 0 40px;
     }

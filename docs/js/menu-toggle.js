@@ -61,6 +61,7 @@
         toddler.addEventListener('mousemove', onMouseMove);
         document.addEventListener('mouseup', onMouseUp);
     }
+    toddlerPin.addEventListener('mousedown', sliderImg);
 }());
 
 (function () {
@@ -70,10 +71,10 @@
         indexPageLink = document.querySelector('.menu__link--index'),
         catalogPageLink = document.querySelector('.menu__link--catalog'),
         formPageLink = document.querySelector('.menu__link--form');
+
     pageHeaderWidth = pageHeader.offsetWidth;
 
     if (currentPage === '/index.html' || currentPage === '/') {
-        toddlerPin.addEventListener('mousedown', sliderImg);
         companyContact.classList.remove('contact--grey');
         indexPageLink.classList.add('menu__link--active-green');
         if (pageHeaderWidth >= 1300) {

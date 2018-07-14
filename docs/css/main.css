@@ -51,7 +51,6 @@ h6 {
     min-height: 115px; } }
 
 .icon {
-  display: inline-block;
   vertical-align: top;
   -webkit-transition: ease .15s;
   transition: ease .15s; }
@@ -65,7 +64,6 @@ h6 {
     margin: 0; } }
 
 .logotype {
-  display: inline-block;
   vertical-align: top; }
   .logotype:hover {
     opacity: .8; }
@@ -98,6 +96,7 @@ h6 {
     color: #000; }
 
 .menu--closed {
+  height: 63px;
   border-bottom: 1px solid #e6e6e6; }
   .menu--closed .menu__wrapper {
     padding: 0 20px; }
@@ -112,7 +111,6 @@ h6 {
         -ms-flex-align: center;
             align-items: center; }
   .menu--closed .menu__btn {
-    display: inline-block;
     width: 24px;
     height: 18px;
     padding: 0;

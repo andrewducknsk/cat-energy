@@ -30,9 +30,9 @@
 
 // closed
 .menu--closed {
-  height: 63px;
   border-bottom: 1px solid #e6e6e6;
   .menu {
+    height: 63px;
     &__wrapper {
       padding: 0 20px;
     }
@@ -84,6 +84,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 63px;
     padding-top: 11px;
     padding-bottom: 14px;
   }
@@ -118,6 +119,7 @@
   }
   &__list {
     text-align: center;
+    background: #fff;
   }
   &__item {
     border-bottom: 1px solid #e6e6e6;

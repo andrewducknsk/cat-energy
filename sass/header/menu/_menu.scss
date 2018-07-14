@@ -1,6 +1,8 @@
 // non js
 .menu--no-js {
   .menu {
+    padding-top: 11px;
+    padding-bottom: 14px;
     &__btn {
       display: none;
     }
@@ -29,13 +31,20 @@
 // closed
 .menu--closed {
   border-bottom: 1px solid #e6e6e6;
-  height: 63px;
   .menu {
-    position: relative;
+    //position: relative;
+    &__wrapper {
+      padding: 0 20px;
+    }
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     &__btn {
-      position: absolute;
-      top: 24px;
-      right: 20px;
+      //position: absolute;
+      //top: 24px;
+      //right: 20px;
       display: inline-block;
       width: 24px;
       height: 18px;
@@ -71,10 +80,20 @@
   z-index: 5;
   width: 100%;
   background: #fff;
+  &__wrapper {
+    padding: 0 20px;
+  }
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 11px;
+    padding-bottom: 14px;
+  }
   &__btn {
-    position: absolute;
-    top: 24px;
-    right: 20px;
+    //position: absolute;
+    //top: 24px;
+    //right: 20px;
     width: 24px;
     height: 18px;
     padding: 0;

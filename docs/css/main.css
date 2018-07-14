@@ -51,6 +51,7 @@ h6 {
     min-height: 115px; } }
 
 .icon {
+  display: inline-block;
   vertical-align: top;
   -webkit-transition: ease .15s;
   transition: ease .15s; }
@@ -64,6 +65,7 @@ h6 {
     margin: 0; } }
 
 .logotype {
+  display: inline-block;
   vertical-align: top; }
   .logotype:hover {
     opacity: .8; }
@@ -77,10 +79,19 @@ h6 {
 .menu--no-js .menu {
   padding-top: 11px;
   padding-bottom: 14px; }
+  .menu--no-js .menu__mobile {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .menu--no-js .menu__mobile .icon {
+      margin-right: 63px; }
   .menu--no-js .menu__btn {
     display: none; }
   .menu--no-js .menu__list {
-    text-align: center; }
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    background: #ffffff; }
   .menu--no-js .menu__item {
     border-bottom: 1px solid #e6e6e6; }
     .menu--no-js .menu__item:first-of-type {
@@ -99,9 +110,9 @@ h6 {
   border-bottom: 1px solid #e6e6e6; }
   .menu--closed .menu {
     height: 63px; }
-    .menu--closed .menu__wrapper {
+    .menu--closed .menu__wrapper--mobile {
       padding: 0 20px; }
-    .menu--closed .menu__main {
+    .menu--closed .menu__mobile {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -137,14 +148,14 @@ h6 {
       display: none; }
 
 .menu {
-  height: 63px;
   position: absolute;
   z-index: 5;
   width: 100%;
+  height: 63px;
   background: #fff; }
-  .menu__wrapper {
+  .menu__wrapper--mobile {
     padding: 0 20px; }
-  .menu__main {
+  .menu__mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -216,7 +227,8 @@ h6 {
 
 @media (min-width: 768px) {
   .menu {
-    display: none; }
+    display: none;
+    height: unset; }
   .menu--closed {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -226,6 +238,10 @@ h6 {
             justify-content: space-between;
     padding: 22px 30px 0;
     border: none; }
+    .menu--closed .menu__wrapper--mobile {
+      padding: 0; }
+    .menu--closed .menu__mobile {
+      padding: 0; }
     .menu--closed .menu__list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -265,7 +281,8 @@ h6 {
     padding-top: 53px;
     background: transparent; }
     .menu--closed .menu__list {
-      width: 550px; }
+      width: 550px;
+      background: transparent; }
     .menu--closed .menu__link {
       font-size: 20px;
       line-height: 25px; }

@@ -1,4 +1,5 @@
 .icon {
+  display: inline-block;
   vertical-align: top;
   transition: ease .15s;
   @include logo--hover;

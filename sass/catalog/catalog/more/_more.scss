@@ -1,9 +1,7 @@
 .more {
   position: relative;
   min-height: 160px;
-  padding: 0 20px;
-  padding-top: 80px;
-  padding-bottom: 25px;
+  padding: 80px 20px 25px;
   text-align: center;
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
@@ -23,11 +21,9 @@
     text-transform: uppercase;
   }
   &__text {
-    margin: 0;
-    margin-top: 14px;
-    margin-bottom: 33px;
-    @include description-text;
-    @include description-product;
+    margin: 14px 0 33px;
+    @include arial-font;
+    @include font-size--14;
   }
   &__link {
     padding: 9.5px 92px;

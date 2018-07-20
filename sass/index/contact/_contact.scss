@@ -6,17 +6,18 @@
     justify-content: space-between;
   }
   &__title {
-    width: 49%;
+    width: 50%;
     padding-right: 20px;
     font-size: 16px;
     line-height: 20px;
-    text-transform: uppercase;
     font-weight: 400;
+    text-transform: uppercase;
   }
   &__address {
-    width: 49%;
+    width: 50%;
     margin: 0;
-    @include description-text;
+    @include arial-font;
+    font-size: 14px;
     line-height: 20px;
   }
   &--grey {
@@ -37,8 +38,10 @@
     }
     &__address {
       width: 25%;
+      //--------
       font-size: 16px;
       line-height: 20px;
+      //--------
       text-align: right;
     }
   }

@@ -1,17 +1,10 @@
-.slider__radio--before[type="radio"]:checked~.slider__slide--before {
-  display: block;
-  margin: 0 auto;
-}
+.slider__radio--before[type="radio"]:checked~.slider__slide--before,
 .slider__radio--after[type="radio"]:checked~.slider__slide--after {
   display: block;
   margin: 0 auto;
 }
 
-.slider__radio--before[type="radio"]:checked~.slider__pin--before:before {
-  @include after-before__pin;
-  left: 5px;
-}
-
+.slider__radio--before[type="radio"]:checked~.slider__pin--before:before,
 .slider__radio--after[type="radio"]:checked~.slider__pin--after:after {
   @include after-before__pin;
   right: 5px;
@@ -19,7 +12,6 @@
 
 .slider {
   text-align: center;
-  overflow: hidden;
   &__slide,
   &__radio {
     display: none;

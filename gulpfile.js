@@ -12,7 +12,11 @@ let gulp = require('gulp'),
     posthtml = require('gulp-posthtml'),
     include = require('posthtml-include'),
     del = require('del'),
-    run = require('run-sequence');
+    run = require('run-sequence'),
+    uglify = require('gulp-uglify'),
+    pump = require('pump'),
+    concat = require('gulp-concat'),
+    sourcemap = require('gulp-sourcemaps');
 
 
 gulp.task('style', function () {
@@ -27,6 +31,13 @@ gulp.task('style', function () {
   .pipe(rename('main.min.css'))
   .pipe(gulp.dest('build/css'))
   .pipe(server.stream());
+});
+
+gulp.task('normalize', function () {
+   gulp.src('css/**/normalize.css')
+       .pipe(minifycss())
+       .pipe(rename('normalize.min.css'))
+       .pipe(gulp.dest('build/css'))
 });
 
 gulp.task('image', function () {
@@ -62,24 +73,10 @@ gulp.task('html', function () {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('build', function (done) {
-  run(
-    'clean',
-    'copy',
-    'style',
-    //'js',
-    //'sprite',
-    'html',
-    done
-  );
-});
-
 gulp.task('copy', function () {
   return gulp.src([
     'fonts/**/*.{woff,woff2}',
     'img/**',
-    'js/**',
-    'css/normalize.css',
     'favicon.ico'
   ], {
     base: '.'
@@ -87,13 +84,39 @@ gulp.task('copy', function () {
   .pipe(gulp.dest('build'));
 });
 
-gulp.task('js', function () {
-  return gulp.src('js/*.js')
-    .pipe(gulp.dest('build/js'))
+gulp.task('concatJs', function () {
+    return gulp.src('js/*.js')
+        // .pipe(sourcemap.init())
+            .pipe(concat('script.js', {newline: ';'}))
+        // .pipe(sourcemap.write())
+        .pipe(gulp.dest('build/js'));
+});
+
+gulp.task('compressJs', function (cb) {
+    pump([
+        gulp.src('build/js/*.js'),
+        uglify(),
+        gulp.dest('build/js')
+      ],
+      cb
+    );
 });
 
 gulp.task('clean', function () {
   return del('build');
+});
+
+gulp.task('build', function (done) {
+    run(
+        'clean',
+        'copy',
+        'style',
+        'normalize',
+        'concatJs',
+        'compressJs',
+        'html',
+        done
+    );
 });
 
 gulp.task('serve', function () {

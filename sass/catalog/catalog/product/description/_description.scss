@@ -10,13 +10,12 @@
     margin-bottom: 32px;
   }
   &__pack {
-    margin-top: 16px;
-    margin-bottom: 25px;
+    margin: 16px 0 25px;
   }
   &__text{
     margin: 0;
-    @include description-text;
-    @include description-product;
+    @include arial-font;
+    @include font-size--14;
   }
 }
 

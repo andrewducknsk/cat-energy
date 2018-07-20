@@ -3,7 +3,50 @@
   margin: 0 auto;
 }
 
+//HEADER
+@mixin menu-btn {
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
 
+@mixin menu-btn--before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #000;
+}
+
+@mixin menu-link {
+  display: inline-block;
+  width: 100%;
+  padding: 19px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+}
+
+@mixin menu-list {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  background: #ffffff;
+}
+
+@mixin menu-item--border {
+  border-bottom: 1px solid #e6e6e6;
+  &:first-of-type {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+//LOGO & ICON
 @mixin logo--hover {
   &:hover {
     opacity: .8;
@@ -16,19 +59,163 @@
   }
 }
 
-@mixin description-text {
+//BUTTON
+@mixin btn--green {
+  background: #68b738;
+  color: #fff;
+}
+
+//FONT
+@mixin arial-font {
   font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   font-weight: 400;
   color: #444;
 }
 
-@mixin description-product {
-  font-size: 12px;
-  line-height: 16px;
+@mixin font-size--36 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
 }
 
+@mixin font-size--14 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@mixin font-size__20 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+@mixin field-text--tablet {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+//INDEX
+@mixin title-size {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+@mixin task {
+  width: 44.3%;
+  height: 55px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+@mixin task-text {
+  margin: 10px 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin task-description {
+  display: block;
+  margin: 0 auto;
+  width: 57.4%;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+  background: #f2f2f2;
+}
+
+@mixin categories {
+  margin-bottom: 20px;
+  padding: 22px 20px;
+  background: #f2f2f2;
+}
+
+@mixin categories-logo {
+  position: relative;
+  float: left;
+  &:before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #68b738;
+    border-radius: 50%;
+  }
+}
+
+@mixin categories-title {
+  display: inline-block;
+  margin-top: 7px;
+  margin-left: 20px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin categories-description {
+  position: relative;
+  margin: 28px 0 20px;
+  padding-bottom: 24px;
+}
+
+@mixin categories-catalog {
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+//FORM
+@mixin form-item__label {
+  display: flex;
+  align-items: center;
+}
+
+@mixin form-item__text {
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin form-item__field {
+  width: 100%;
+  height: 45px;
+  padding: 13px 15px;
+  color: #444;
+  border: 1px solid #e6e6e6;
+  outline: none;
+}
+
+@mixin form-item__field--hover {
+  transition: border-color ease .3s;
+  &:hover {
+    border-color: #cdcdcd;
+  }
+}
+
+@mixin form-item__field--active {
+  &:active {
+    border: 2px solid #444;
+  }
+}
+
+@mixin form-item__title {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+// CATALOG
 @mixin plus {
   content: '';
   position: absolute;
@@ -100,34 +287,6 @@
   }
 }
 
-@mixin field-text {
-  display: inline-block;
-  margin: 0;
-  margin-right: 10px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-@mixin field-text--tablet {
-  font-size: 20px;
-  line-height: 20px;
-}
-
-@mixin field--hover {
-  transition: border-color ease .3s;
-  &:hover {
-    border-color: #cdcdcd;
-  }
-}
-
-@mixin field--active {
-  &:active {
-    border: 2px solid #444;
-  }
-}
-
 @mixin pin--hover {
   &:hover {
     border-color: #bcbcbc;
@@ -151,31 +310,6 @@
   margin-top: -3px;
   background: #68b738;
   border-radius: 5px;
-}
-
-@mixin example-text {
-  width: 124px;
-  height: 55px;
-  border: 1px solid #cdcdcd;
-  border-radius: 5px;
-  &__text {
-    margin: 10px 0;
-    text-align: center;
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
-  }
-  &__description {
-    display: block;
-    margin: 0 auto;
-    background: #f2f2f2;
-    width: 70px;
-    text-align: center;
-    text-transform: lowercase;
-    @include description-text;
-    font-size: 12px;
-    line-height: 12px;
-  }
 }
 
 $left-arrow--after: 115px;
@@ -252,46 +386,4 @@ $left-arrow--after: 115px;
   font-size: 281px;
   line-height: 225px;
   color: #f2f2f2;
-}
-
-@mixin categories {
-  margin-bottom: 20px;
-  padding: 22px 20px;
-  background: #f2f2f2;
-  &__logo {
-    float: left;
-    &:before {
-      content: '';
-      display: block;
-      width: 50px;
-      height: 50px;
-      background: #68b738;
-      border-radius: 50%;
-    }
-  }
-  &__title {
-    display: inline-block;
-    margin-top: 7px;
-    margin-left: 12px;
-    font-size: 24px;
-    line-height: 37px;
-    text-transform: uppercase;
-  }
-  &__description {
-    position: relative;
-    margin: 0;
-    margin-top: 28px;
-    margin-bottom: 20px;
-    padding-bottom: 24px;
-    @include description-text;
-    @include grey-line;
-  }
-  &__catalog {
-    position: relative;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #000;
-    @include arrow;
-  }
 }

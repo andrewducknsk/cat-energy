@@ -1,22 +1,22 @@
 .functional-food {
   position: relative;
-  height: 500px;
+  padding-bottom: 32px;
   background: url('../img/index/bg-m.jpg') no-repeat top;
+  //background-size: contain;
   &__wrapper {
     padding: 0 20px;
   }
   &__preview {
-    position: absolute;
-    top: 165px;
-    left: 50%;
-    right: 10%;
-    margin-left: -140px;
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 15px;
   }
 }
 
 @media (min-width: 768px) {
   .functional-food {
-    height: 865px;
+    min-height: 865px;
     background: url("../img/index/bg-t.jpg") no-repeat bottom;
     &__wrapper {
       padding: 0 120px;
@@ -29,18 +29,19 @@
 
 @media (min-width: 1300px) {
   .functional-food {
-    height: 697px;
-    margin-top: -115px;
-    background: url("../img/index/bg-d.jpg") no-repeat;
-    background-position: 100% 0;
+    min-height: 697px;
+    margin-top: -116px;
+    background: url("../img/index/bg-d.jpg") no-repeat right top;
     &__wrapper {
       @include centering--desktop;
       padding: 0 120px;
     }
     &__preview {
+      position: absolute;
       display: inline-block;
       top: 143px;
       left: 48.1%;
+      width: 559px;
     }
   }
 

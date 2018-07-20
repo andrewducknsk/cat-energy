@@ -1,0 +1,38 @@
+.name-cat {
+  &__label {
+    @include form-item__label;
+  }
+  &__text {
+    flex-shrink: 0;
+    @include form-item__text;
+  }
+  &__field {
+    //-----
+    font-size: 20px;
+    line-height: 20px;
+    //-----
+    @include form-item__field;
+    @include form-item__field--hover;
+    @include form-item__field--active;
+  }
+}
+
+@media (min-width: 768px) {
+  .name-field {
+    width: 100%;
+    &__text {
+      @include font-size__20;
+    }
+    &__area {
+      height: 52px;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .name-field {
+    &__area {
+      //width: 508px;
+    }
+  }
+}

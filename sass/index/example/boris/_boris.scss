@@ -4,7 +4,8 @@
     margin: 0;
     margin-bottom: 27px;
     padding-right: 5px;
-    @include description-text
+    @include arial-font;
+    @include font-size--14;
   }
 }
 
@@ -15,8 +16,10 @@
       padding: 0 30px;
     }
     &__text {
+      //-----
       font-size: 16px;
       line-height: 24px;
+      //-----
     }
   }
 }

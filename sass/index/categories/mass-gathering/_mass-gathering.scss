@@ -1,19 +1,7 @@
 .mass-gathering {
-  //@include categories;
-  margin-bottom: 20px;
-  padding: 22px 20px;
-  background: #f2f2f2;
+  @include categories;
   &__logo {
-    position: relative;
-    float: left;
-    &:before {
-      content: '';
-      display: block;
-      width: 50px;
-      height: 50px;
-      background: #68b738;
-      border-radius: 50%;
-    }
+    @include categories-logo;
   }
   &__icon {
     position: absolute;
@@ -24,29 +12,16 @@
   }
 
   &__title {
-    display: inline-block;
-    margin-top: 7px;
-    margin-left: 20px;
-    font-size: 24px;
-    line-height: 37px;
-    font-weight: 400;
-    text-transform: uppercase;
+    @include categories-title;
   }
   &__description {
-    position: relative;
-    margin: 0;
-    margin-top: 28px;
-    margin-bottom: 20px;
-    padding-bottom: 24px;
-    @include description-text;
+    @include categories-description;
+    @include arial-font;
+    @include font-size--14;
     @include grey-line;
   }
   &__catalog {
-    position: relative;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #000;
+    @include categories-catalog;
     @include arrow;
     @include arrow--hover;
     @include arrow--active;
@@ -73,20 +48,20 @@
     }
     &__title {
       margin: 0;
-      font-size: 36px;
-      line-height: 36px;
+      @include font-size--36;
     }
     &__description {
       min-width: 340px;
+      //----------
       font-size: 16px;
       line-height: 24px;
+      //----------
       &:after {
         content: none;
       }
     }
     &__catalog {
-      font-size: 20px;
-      line-height: 20px;
+      @include font-size__20;
       &:before {
         top: 13.335px;
         left: 132px;

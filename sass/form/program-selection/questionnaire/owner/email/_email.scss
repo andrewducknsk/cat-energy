@@ -1,28 +1,24 @@
 .email {
   margin-bottom: 15px;
   &__label {
-    display: flex;
-    align-items: center;
+    @include form-item__label;
   }
   &__text {
     flex-shrink: 0;
-    @include field-text;
+    @include form-item__text;
   }
   &__field {
-    width: 100%;
-    height: 40px;
+    @include form-item__field;
+    //height: 40px;
     padding-left: 13px;
     padding-right: 35px;
     font-size: 20px;
     line-height: 20px;
-    color: #444;
     text-overflow: ellipsis;
-    border: 1px solid #e6e6e6;
     background: url("../img/form/mail.png") no-repeat;
     background-position: 94% 13px;
-    outline: none;
-    @include field--hover;
-    @include field--active;
+    @include form-item__field--hover;
+    @include form-item__field--active;
   }
 }
 
@@ -30,10 +26,9 @@
   .email {
     margin-bottom: 20px;
     &__text {
-      @include field-text--tablet;
+      @include font-size__20;
     }
     &__field {
-      //width: 549px;
       height: 52px;
       padding-right: 45px;
       background-position: 96% 18px;

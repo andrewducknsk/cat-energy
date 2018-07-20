@@ -3,16 +3,18 @@
   text-align: center;
   color: #fff;
   &__title {
+    max-width: 458px;
+    margin: 0 auto;
     margin-bottom: 24px;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
+    @include font-size--36;
   }
   &__description {
     margin: 0;
-    margin-bottom: 313px;
+    margin-bottom: 28px;
+    //-----
     font-size: 14px;
     line-height: 14px;
+    //-----
     text-transform: uppercase;
   }
 }
@@ -30,8 +32,7 @@
     }
     &__description {
       margin-bottom: 60px;
-      font-size: 20px;
-      line-height: 20px;
+      @include font-size__20;
     }
   }
 }

@@ -1,4 +1,5 @@
 .logotype {
+  display: inline-block;
   vertical-align: top;
   @include logo--hover;
   @include logo--active;

@@ -4,30 +4,34 @@
 <body>
 	<include src="html/svg-sprite.html"></include>
 	<header class="page-header">
-		<nav class="menu menu--no-js">
-			<div class="icon">
-				<a class="icon__link" href="index.html">
-					<picture>
-						<source media="(min-width: 1300px)" srcset="img/header/icon-d.webp">
-						<source media="(min-width: 768px)" srcset="img/header/icon-t.webp">
-						<source srcset="img/header/icon-m.webp">
+		<nav class="menu menu--no-js menu--js">
+			<div class="menu__wrapper--mobile">
+				<div class="menu__mobile">
+					<div class="icon">
+						<a class="icon__link" href="index.html">
+							<picture>
+								<source media="(min-width: 1300px)" srcset="img/header/icon-d.webp">
+								<source media="(min-width: 768px)" srcset="img/header/icon-t.webp">
+								<source srcset="img/header/icon-m.webp">
 
-						<source media="(min-width: 1300px)" srcset="img/header/icon-d.png">
-						<source media="(min-width: 768px)" srcset="img/header/icon-t.png">
-						<img src="img/header/icon-m.png" alt="Cat Energy">
-					</picture>
-				</a>
-			</div>
-			<div class="logotype">
-				<a class="logotype__link" href="index.html">
-					<picture>
-						<source type="image/webp" srcset="img/header/logo-m.webp">
+								<source media="(min-width: 1300px)" srcset="img/header/icon-d.png">
+								<source media="(min-width: 768px)" srcset="img/header/icon-t.png">
+								<img src="img/header/icon-m.png" alt="Cat Energy">
+							</picture>
+						</a>
+					</div>
+					<div class="logotype">
+						<a class="logotype__link" href="index.html">
+							<picture>
+								<source type="image/webp" srcset="img/header/logo-m.webp">
 
-						<img src="img/header/logo-m.png" alt="Store Cat Energy">
-					</picture>
-				</a>
+								<img src="img/header/logo-m.png" alt="Store Cat Energy">
+							</picture>
+						</a>
+					</div>
+					<button class="menu__btn menu__btn--js" type="button">Открыть меню</button>
+				</div>
 			</div>
-			<button class="menu__btn" type="button">Открыть меню</button>
 			<ul class="menu__list">
 				<li class="menu__item ">
 					<a class="menu__link menu__link--index menu__link--white" href="index.html">Главная</a>
@@ -44,6 +48,10 @@
 	<main class="page-main">
 		<section class="functional-food">
 			<div class="functional-food__wrapper">
+				<div class="food">
+					<h1 class="food__title">Функциональное питание для котов</h1>
+					<p class="food__description">Занялся собой? Займись котом!</p>
+				</div>
 				<picture>
 					<source type="image/webp" media="(min-width: 1300px)" srcset="img/index/product-d.webp">
 					<source type="image/webp" srcset="img/index/product-m.webp" >
@@ -51,12 +59,8 @@
 					<source media="(min-width: 1300px)" srcset="img/index/product-d.png">
 					<img class="functional-food__preview" src="img/index/product-m.png" alt="eat">
 				</picture>
-				<div class="food">
-					<h1 class="food__title">Функциональное питание для котов</h1>
-					<p class="food__description">Занялся собой? Займись котом!</p>
-				</div>
 				<div class="program">
-					<a class="program__btn btn" href="#">Подобрать программу</a>
+					<a class="program__btn program__btn--green btn" href="form.html">Подобрать программу</a>
 				</div>
 			</div>
 		</section>
@@ -84,7 +88,7 @@
 							</svg>
 						</div>
 						<p class="mass-gathering__description">
-							Заработать фвторитет среди дворовых котов и даже собак?
+							Заработать авторитет среди дворовых котов и даже собак?
 							Серия Cat Energy Pro пможет вашему коту нарастить необходимые мышцы!
 						</p>
 						<a class="mass-gathering__catalog" href="#">Каталог Slim</a>
@@ -172,7 +176,7 @@
 					<div class="slider">
 						<input class="slider__radio slider__radio--before" type="radio" id="before" name="cat" checked>
 						<input class="slider__radio slider__radio--after" type="radio" id="after" name="cat">
-						<div class="slider__slide slider__slide--before">
+						<div class="slider__slide slider__slide--before slider__slide--before-js">
 							<picture>
 								<source type="image/webp" media="(min-width: 1300px)" srcset="img/index/before-d.webp">
 								<source type="image/webp" media="(min-width: 768px)" srcset="img/index/before-t.webp">
@@ -204,10 +208,10 @@
 						<label class="slider__toggle" for="after">
 							<span class="slider__text">Стало</span>
 						</label>
-						<div class="toddler">
+						<div class="toddler toddler--js">
 							<p class="toddler__text">Было</p>
-							<div class="toddler__line">
-								<div class="toddler__pin"></div>
+							<div class="toddler__line toddler__line--js">
+								<div class="toddler__pin toddler__pin--js"></div>
 							</div>
 							<p class="toddler__text">Стало</p>
 						</div>
@@ -219,7 +223,6 @@
 	</main>
 	<include src="html/map.html"></include>
 	<include src="html/footer.html"></include>
-	<script src="js/picturefill.js"></script>
-	<script src="js/menu-toggle.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

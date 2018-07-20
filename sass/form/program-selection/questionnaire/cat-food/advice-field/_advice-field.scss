@@ -1,0 +1,36 @@
+.advice-field {
+  &__pin {
+    outline: none;
+    vertical-align: middle;
+    @include grey-pin;
+    @include pin--hover;
+  }
+  &__area {
+    display: none;
+    &:checked~.advice-field__pin:after {
+      @include green-pin;
+    }
+  }
+  &__text {
+    margin-right: 0;
+    vertical-align: middle;
+    @include form-item__text;
+  }
+  @include pin--active;
+}
+
+@media (min-width: 768px) {
+  .advice-field {
+    &__pin {
+      @include grey-pin--tablet;
+    }
+    &__area {
+      &:checked~.advice-field__pin:after {
+        @include green-pin--tablet;
+      }
+    }
+    &__text {
+      @include font-size__20;
+    }
+  }
+}

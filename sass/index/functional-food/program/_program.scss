@@ -1,13 +1,9 @@
 .program {
   text-align: center;
   &__btn {
-    padding: 10.5px 69px;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    background: #68b738;
-    color: #fff;
-    transition: background ease .3s, color ease .15s;
+    &--green {
+      @include btn--green;
+    }
     @include btn--hover;
     @include btn--active;
   }

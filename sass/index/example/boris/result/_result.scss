@@ -6,10 +6,10 @@
     width: 100%;
     margin: 0;
     margin-top: 34px;
-    text-align: center;
-    text-transform: uppercase;
     font-size: 14px;
     line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
@@ -17,11 +17,10 @@
   .result {
     justify-content: space-between;
     &__costs {
-      width: 192px;
+      width: 191px;
       margin-top: 13px;
-      font-size: 20px;
-      line-height: 20px;
       text-align: right;
+      @include font-size__20;
     }
   }
 }

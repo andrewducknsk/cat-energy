@@ -1,5 +1,6 @@
 @import "sass/_scaffolding.scss",
-        "sass/_mixin.scss";
+        "sass/_mixin.scss",
+        "sass/btn/_btn.scss";
 
 // header
 @import "sass/header/_page-header.scss",
@@ -58,15 +59,15 @@
 @import "sass/form/program-selection/_program-selection.scss",
         "sass/form/program-selection/questionnaire/_questionnaire.scss",
 
-        "sass/form/program-selection/questionnaire/cat/_cat.scss",
-        "sass/form/program-selection/questionnaire/cat/age-field/_age-field.scss",
-        "sass/form/program-selection/questionnaire/cat/name-field/_name-field.scss",
-        "sass/form/program-selection/questionnaire/cat/weight-field/_weight-field.scss",
+        "sass/form/program-selection/questionnaire/about-cat/_about-cat.scss",
+        "sass/form/program-selection/questionnaire/about-cat/age-cat/_age-cat.scss",
+        "sass/form/program-selection/questionnaire/about-cat/name-cat/_name-cat.scss",
+        "sass/form/program-selection/questionnaire/about-cat/weight-cat/_weight-cat.scss",
 
-        "sass/form/program-selection/questionnaire/body/_body.scss",
-        "sass/form/program-selection/questionnaire/body/losing-weight-field/_losing-weight-field.scss",
-        "sass/form/program-selection/questionnaire/body/excess-weight-field/_excess-weight-field.scss",
-        "sass/form/program-selection/questionnaire/body/advice-field/_advice-field.scss",
+        "sass/form/program-selection/questionnaire/cat-food/cat-food.scss",
+        "sass/form/program-selection/questionnaire/cat-food/losing-weight-field/_losing-weight-field.scss",
+        "sass/form/program-selection/questionnaire/cat-food/excess-weight-field/_excess-weight-field.scss",
+        "sass/form/program-selection/questionnaire/cat-food/advice-field/_advice-field.scss",
 
         "sass/form/program-selection/questionnaire/owner/_owner.scss",
         "sass/form/program-selection/questionnaire/owner/email/_email.scss",

@@ -1,11 +1,7 @@
 .extra {
   padding: 15px 20px 21px;
   &__title {
-    position: relative;
-    margin-bottom: 30px;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 400;
+    @include form-item__title;
     &:after {
       width: 136px;
       right: -20px;
@@ -16,6 +12,7 @@
     display: inline-block;
     width: 100%;
     margin-bottom: 13px;
+    outline: none;
     @include pin--active;
   }
   &__pin {
@@ -45,8 +42,8 @@
     }
   }
   &__text {
-    @include field-text;
     vertical-align: middle;
+    @include form-item__text;
   }
 }
 
@@ -55,8 +52,7 @@
     padding: 35px 0 54px;
     &__title {
       margin-bottom: 75px;
-      font-size: 36px;
-      line-height: 36px;
+      @include font-size--36;
       &:after {
         right: -70px;
         width: 445px;
@@ -90,7 +86,7 @@
       }
     }
     &__text {
-      @include field-text--tablet;
+      @include font-size__20;
     }
   }
 }

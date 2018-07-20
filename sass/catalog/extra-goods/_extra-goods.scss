@@ -25,8 +25,7 @@
     }
     &__title {
       padding-left: 36px;
-      font-size: 36px;
-      line-height: 36px;
+      @include font-size--36;
       &:before {
         top: 20px;
         right: -30px;

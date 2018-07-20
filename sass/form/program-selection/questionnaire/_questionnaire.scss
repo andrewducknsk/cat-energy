@@ -3,17 +3,12 @@
   &__btn-submit {
     display: block;
     width: 87.5%;
-    height: 40px;
     margin: 0 auto;
-    font-family: "oswald", sans-serif;
     font-size: 16px;
     line-height: 20px;
-    text-transform: uppercase;
-    background: #68b738;
     border: none;
-    color: #fff;
     cursor: pointer;
-    transition: background ease .3s, color ease .15s;
+    @include btn--green;
     @include btn--hover;
     @include btn--active;
   }
@@ -21,8 +16,9 @@
     margin: 0;
     margin-top: 20px;
     text-align: center;
-    @include description-text;
+    font-size: 14px;
     line-height: 16px;
+    @include arial-font;
   }
 }
 
@@ -31,11 +27,11 @@
     padding-top: 78px;
     &__btn-submit {
       display: inline-block;
+      padding: 0;
       width: 45.38%;
       height: 52px;
       margin-right: 60px;
-      font-size: 20px;
-      line-height: 20px;
+      @include font-size--20;
     }
     &__required-fields {
       display: inline-block;

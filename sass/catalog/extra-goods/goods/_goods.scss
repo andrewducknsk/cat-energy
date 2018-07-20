@@ -1,6 +1,5 @@
 .goods {
-  padding-top: 14px;
-  padding-bottom: 17px;
+  padding: 14px 0 17px;
   border-top: 1px solid #cdcdcd;
   &:last-of-type {
     border-bottom: 1px solid #cdcdcd;
@@ -21,8 +20,7 @@
     &__title {
       width: 50%;
       margin-bottom: 27px;
-      font-size: 20px;
-      line-height: 20px;
+      @include font-size__20;
       text-transform: uppercase;
     }
   }

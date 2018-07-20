@@ -3,17 +3,17 @@
   font-weight: 400;
   font-display: swap;
   font-style: normal;
-  src: url('../fonts/Oswald-regular.woff'),
-       url('../fonts/Oswald-regular.woff2');
+  src: url('../fonts/Oswald-regular.woff2') format('woff2'),
+       url('../fonts/Oswald-regular.woff') format('woff');
 }
 
 @font-face {
   font-family: "oswald";
   font-weight: 500;
-  font-display: swap;
+  font-display: block;
   font-style: normal;
-  src: url('../fonts/Oswald-medium.woff'),
-       url('../fonts/Oswald-medium.woff2');
+  src: url('../fonts/Oswald-medium.woff2') format('woff2'),
+       url('../fonts/Oswald-medium.woff') format('woff');
 }
 
 * {

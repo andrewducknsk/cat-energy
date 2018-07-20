@@ -1,12 +1,7 @@
 .comment {
   padding: 15px 20px;
   &__title {
-    position: relative;
-    margin-bottom: 35px;
-    padding-right: 145px;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 400;
+    @include form-item__title;
     &:after {
       width: 158px;
       right: -20px;
@@ -18,15 +13,15 @@
     height: 150px;
     resize: none;
     padding: 14px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444;
     border: 1px solid #e6e6e6;
     outline: none;
-    font-size: 20px;
-    line-height: 20px;
-    color: #444;
-    @include field--hover;
-    @include field--active;
+    @include form-item__field--hover;
+    //@include form-item__field--active;
     &::placeholder {
-      @include field-text;
+      @include form-item__text;
       color: #444;
     }
     &::-webkit-scrollbar-button {
@@ -53,8 +48,7 @@
     padding: 35px 0;
     &__title {
       margin-bottom: 75px;
-      font-size: 36px;
-      line-height: 36px;
+      @include font-size--36;
       &:after {
         width: 480px;
         right: -70px;

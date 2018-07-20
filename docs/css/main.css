@@ -2206,6 +2206,7 @@ h6 {
     .advice-field__pin:hover {
       border-color: #bcbcbc; }
   .advice-field__area {
+    outline: none;
     display: none; }
     .advice-field__area:checked ~ .advice-field__pin:after {
       content: '';
@@ -2220,6 +2221,7 @@ h6 {
       background: #68b738;
       border-radius: 50%; }
   .advice-field__text {
+    outline: none;
     margin-right: 0;
     vertical-align: middle;
     display: inline-block;
@@ -2431,7 +2433,7 @@ h6 {
     resize: none;
     padding: 14px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 24px;
     color: #444;
     border: 1px solid #e6e6e6;
     outline: none;

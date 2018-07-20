@@ -2074,6 +2074,7 @@ h6 {
     vertical-align: top; } }
 
 .losing-weight-field {
+  outline: none;
   -webkit-transition: ease .15s;
   transition: ease .15s; }
   .losing-weight-field__pin {
@@ -2129,6 +2130,7 @@ h6 {
     line-height: 20px; } }
 
 .excess-weight-field {
+  outline: none;
   margin: 13px 0;
   -webkit-transition: ease .15s;
   transition: ease .15s; }
@@ -2185,6 +2187,7 @@ h6 {
     line-height: 20px; } }
 
 .advice-field {
+  outline: none;
   -webkit-transition: ease .15s;
   transition: ease .15s; }
   .advice-field__pin {
@@ -2432,8 +2435,6 @@ h6 {
     transition: border-color ease .3s; }
     .comment__area:hover {
       border-color: #cdcdcd; }
-    .comment__area:active {
-      border: 2px solid #444; }
     .comment__area::-webkit-input-placeholder {
       display: inline-block;
       margin: 0;
@@ -2552,6 +2553,7 @@ h6 {
     display: inline-block;
     width: 100%;
     margin-bottom: 13px;
+    outline: none;
     -webkit-transition: ease .15s;
     transition: ease .15s; }
     .extra__item:active {

@@ -2191,10 +2191,10 @@ h6 {
     line-height: 20px; } }
 
 .advice-field {
-  outline: none;
   -webkit-transition: ease .15s;
   transition: ease .15s; }
   .advice-field__pin {
+    outline: none;
     vertical-align: middle;
     position: relative;
     display: inline-block;

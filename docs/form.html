@@ -75,13 +75,13 @@
 		</div>
 		<ul class="menu__list">
 			<li class="menu__item ">
-				<a class="menu__link menu__link--index menu__link--white" href="index.html">Главная</a>
+				<a class="menu__link menu__link--index" href="index.html">Главная</a>
 			</li>
 			<li class="menu__item">
-				<a class="menu__link menu__link--catalog menu__link--white" href="catalog.html">Каталог продукции</a>
+				<a class="menu__link menu__link--catalog" href="catalog.html">Каталог продукции</a>
 			</li>
 			<li class="menu__item">
-				<a class="menu__link menu__link--form menu__link--white" href="form.html">Подбор программы</a>
+				<a class="menu__link menu__link--form" href="form.html">Подбор программы</a>
 			</li>
 		</ul>
 	</nav>
@@ -93,27 +93,27 @@
 				<div class="program-selection__wrapper">
 					<p class="program-selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
 					<form class="questionnaire" method="get">
-						<div class="cat">
-							<div class="name-field">
-								<label class="name-field__label">
-									<p class="name-field__text">Имя:*</p>
-									<input class="name-field__area" type="text" placeholder="Имя кота" required="">
+						<div class="about-cat">
+							<div class="name-cat">
+								<label class="name-cat__label">
+									<p class="name-cat__text">Имя:*</p>
+									<input class="name-cat__field" type="text" placeholder="Имя кота" required="">
 								</label>
 							</div>
-							<div class="weight-field">
-								<label class="weight-field__label">
-									<p class="weight-field__text">Вес (кг):*</p>
-									<input class="weight-field__area" type="text" placeholder="Вес кота" required="">
+							<div class="weight-cat">
+								<label class="weight-cat__label">
+									<p class="weight-cat__text">Вес (кг):*</p>
+									<input class="weight-cat__field" type="text" placeholder="Вес кота" required="">
 								</label>
 							</div>
-							<div class="age-field">
-								<label class="age-field__label">
-									<p class="age-field__text">Возраст (лет):*</p>
-									<input class="age-field__area" type="text" placeholder="Возраст кота" required="">
+							<div class="age-cat">
+								<label class="age-cat__label">
+									<p class="age-cat__text">Возраст (лет):*</p>
+									<input class="age-cat__field" type="text" placeholder="Возраст кота" required="">
 								</label>
 							</div>
 						</div>
-						<div class="body">
+						<div class="cat-food">
 							<div class="losing-weight-field">
 								<label class="losing-weight-field__label">
 									<input class="losing-weight-field__area" type="radio" name="move">
@@ -180,7 +180,7 @@
 								<p class="extra__text">Витамины</p>
 							</label>
 						</article>
-						<button class="questionnaire__btn-submit btn" type="submit">Отправить заявку</button>
+						<button class="questionnaire__btn-submit questionnaire__btn--green btn" type="submit">Отправить заявку</button>
 						<p class="questionnaire__required-fields">* - Обязательные поля</p>
 					</form>
 				</div>

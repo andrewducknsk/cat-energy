@@ -45,7 +45,7 @@
 	</svg>
 </div>
 	<header class="page-header">
-		<nav class="menu menu--no-js">
+		<nav class="menu menu--no-js menu--js">
 			<div class="menu__wrapper--mobile">
 				<div class="menu__mobile">
 					<div class="icon">
@@ -57,7 +57,7 @@
 
 								<source media="(min-width: 1300px)" srcset="img/header/icon-d.png">
 								<source media="(min-width: 768px)" srcset="img/header/icon-t.png">
-								<img srcset="img/header/icon-m.png" alt="Cat Energy">
+								<img src="img/header/icon-m.png" alt="Cat Energy">
 							</picture>
 						</a>
 					</div>
@@ -70,7 +70,7 @@
 							</picture>
 						</a>
 					</div>
-					<button class="menu__btn" type="button">Открыть меню</button>
+					<button class="menu__btn menu__btn--js" type="button">Открыть меню</button>
 				</div>
 			</div>
 			<ul class="menu__list">
@@ -101,7 +101,7 @@
 					<img class="functional-food__preview" src="img/index/product-m.png" alt="eat">
 				</picture>
 				<div class="program">
-					<a class="program__btn btn" href="#">Подобрать программу</a>
+					<a class="program__btn program__btn--green btn" href="form.html">Подобрать программу</a>
 				</div>
 			</div>
 		</section>
@@ -217,7 +217,7 @@
 					<div class="slider">
 						<input class="slider__radio slider__radio--before" type="radio" id="before" name="cat" checked="">
 						<input class="slider__radio slider__radio--after" type="radio" id="after" name="cat">
-						<div class="slider__slide slider__slide--before">
+						<div class="slider__slide slider__slide--before slider__slide--before-js">
 							<picture>
 								<source type="image/webp" media="(min-width: 1300px)" srcset="img/index/before-d.webp">
 								<source type="image/webp" media="(min-width: 768px)" srcset="img/index/before-t.webp">
@@ -249,10 +249,10 @@
 						<label class="slider__toggle" for="after">
 							<span class="slider__text">Стало</span>
 						</label>
-						<div class="toddler">
+						<div class="toddler toddler--js">
 							<p class="toddler__text">Было</p>
-							<div class="toddler__line">
-								<div class="toddler__pin"></div>
+							<div class="toddler__line toddler__line--js">
+								<div class="toddler__pin toddler__pin--js"></div>
 							</div>
 							<p class="toddler__text">Стало</p>
 						</div>

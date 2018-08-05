@@ -38,7 +38,7 @@ h6 {
   padding: 0; }
 
 .btn {
-  padding: 10.5px 69px;
+  padding: 10.5px 73px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1253,7 +1253,18 @@ h6 {
   display: block;
   margin: 0 auto; }
 
-.slider__radio--before[type="radio"]:checked ~ .slider__pin--before:before,
+.slider__radio--before[type="radio"]:checked ~ .slider__pin--before:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 34px;
+  height: 6px;
+  margin-top: -3px;
+  background: #68b738;
+  border-radius: 5px;
+  left: 5px; }
+
 .slider__radio--after[type="radio"]:checked ~ .slider__pin--after:after {
   content: '';
   position: absolute;

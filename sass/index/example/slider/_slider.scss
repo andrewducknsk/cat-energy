@@ -4,7 +4,11 @@
   margin: 0 auto;
 }
 
-.slider__radio--before[type="radio"]:checked~.slider__pin--before:before,
+.slider__radio--before[type="radio"]:checked~.slider__pin--before:before {
+  @include after-before__pin;
+  left: 5px;
+}
+
 .slider__radio--after[type="radio"]:checked~.slider__pin--after:after {
   @include after-before__pin;
   right: 5px;

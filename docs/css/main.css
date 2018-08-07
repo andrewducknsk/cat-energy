@@ -449,10 +449,11 @@ h6 {
       padding: 0 70px; }
     .contact__title {
       width: 40%;
+      padding-right: 0px;
       font-size: 20px;
       line-height: 25px; }
     .contact__address {
-      width: 25%;
+      width: 42%;
       font-size: 16px;
       line-height: 20px;
       text-align: right; } }
@@ -1239,7 +1240,7 @@ h6 {
       font-size: 30px;
       line-height: 37px; }
     .time__description {
-      width: 135px;
+      width: 106px;
       margin-top: -10px;
       font-size: 14px;
       line-height: 14px;

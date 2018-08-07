@@ -426,7 +426,7 @@ h6 {
             justify-content: space-between; }
   .contact__title {
     width: 50%;
-    padding-right: 20px;
+    padding-right: 41px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -1170,6 +1170,7 @@ h6 {
     display: block;
     margin: 0 auto;
     width: 57.4%;
+    padding: 0 8px;
     font-size: 12px;
     line-height: 12px;
     text-align: center;
@@ -1217,6 +1218,7 @@ h6 {
     display: block;
     margin: 0 auto;
     width: 57.4%;
+    padding: 0 8px;
     font-size: 12px;
     line-height: 12px;
     text-align: center;
@@ -1683,7 +1685,7 @@ h6 {
       display: inline-block;
       top: 50%;
       height: 3px;
-      margin-top: -1.5px;
+      margin-top: 3px;
       background: #68b738;
       right: -20px;
       top: 15px;
@@ -1707,7 +1709,7 @@ h6 {
       display: inline-block;
       top: 50%;
       height: 3px;
-      margin-top: -1.5px;
+      margin-top: 3px;
       background: #68b738;
       top: 20px;
       left: -30px;
@@ -1964,7 +1966,7 @@ h6 {
   line-height: 20px;
   width: 100%;
   height: 45px;
-  padding: 13px 15px;
+  padding: 0 15px;
   color: #444;
   border: 1px solid #e6e6e6;
   outline: none;
@@ -2008,7 +2010,7 @@ h6 {
   line-height: 20px;
   width: 100%;
   height: 45px;
-  padding: 13px 15px;
+  padding: 0 15px;
   color: #444;
   border: 1px solid #e6e6e6;
   outline: none;
@@ -2052,7 +2054,7 @@ h6 {
     line-height: 20px;
     width: 100%;
     height: 45px;
-    padding: 13px 15px;
+    padding: 0 15px;
     color: #444;
     border: 1px solid #e6e6e6;
     outline: none;
@@ -2265,7 +2267,8 @@ h6 {
     margin-bottom: 30px;
     font-size: 24px;
     line-height: 24px;
-    font-weight: 400; }
+    font-weight: 400;
+    padding-right: 90px; }
     .owner__title:after {
       width: 99px;
       right: -20px;
@@ -2274,7 +2277,7 @@ h6 {
       display: inline-block;
       top: 50%;
       height: 3px;
-      margin-top: -1.5px;
+      margin-top: 3px;
       background: #68b738; }
 
 @media (min-width: 768px) {
@@ -2296,7 +2299,7 @@ h6 {
         display: inline-block;
         top: 50%;
         height: 3px;
-        margin-top: -1.5px;
+        margin-top: 3px;
         background: #68b738; } }
 
 @media (min-width: 1300px) {
@@ -2330,7 +2333,7 @@ h6 {
   .email__field {
     width: 100%;
     height: 45px;
-    padding: 13px 15px;
+    padding: 0 15px;
     color: #444;
     border: 1px solid #e6e6e6;
     outline: none;
@@ -2387,7 +2390,7 @@ h6 {
 .phone-number__field {
   width: 100%;
   height: 45px;
-  padding: 13px 15px;
+  padding: 0 15px;
   color: #444;
   border: 1px solid #e6e6e6;
   outline: none;
@@ -2435,7 +2438,7 @@ h6 {
       display: inline-block;
       top: 50%;
       height: 3px;
-      margin-top: -1.5px;
+      margin-top: 3px;
       background: #68b738; }
   .comment__area {
     width: 100%;
@@ -2518,7 +2521,7 @@ h6 {
         display: inline-block;
         top: 50%;
         height: 3px;
-        margin-top: -1.5px;
+        margin-top: 3px;
         background: #68b738; }
     .comment__area {
       height: 175px;
@@ -2563,7 +2566,7 @@ h6 {
       display: inline-block;
       top: 50%;
       height: 3px;
-      margin-top: -1.5px;
+      margin-top: 3px;
       background: #68b738; }
   .extra__item {
     display: inline-block;
@@ -2628,7 +2631,7 @@ h6 {
         display: inline-block;
         top: 50%;
         height: 3px;
-        margin-top: -1.5px;
+        margin-top: 3px;
         background: #68b738; }
     .extra__item {
       width: 49%;

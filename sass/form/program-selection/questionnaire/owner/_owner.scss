@@ -2,6 +2,7 @@
   padding: 30px 20px 15px;
   &__title {
     @include form-item__title;
+    padding-right: 90px;
     &:after {
       width: 99px;
       right: -20px;

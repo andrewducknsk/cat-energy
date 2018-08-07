@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
   }
-  &__title {
+  &__cooperation {
     width: 50%;
     padding-right: 41px;
     font-size: 16px;
@@ -31,9 +31,9 @@
     &__wrapper {
       padding: 0 70px;
     }
-    &__title {
+    &__cooperation {
       width: 40%;
-      padding-right: 0px;
+      padding-right: 0;
       font-size: 20px;
       line-height: 25px;
     }

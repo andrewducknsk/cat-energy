@@ -1,6 +1,6 @@
 .copyright {
   margin: 22px 0;
-  transition: ease .2s;
+  transition: ease 0.2s;
   &__link {
     display: flex;
     justify-content: space-between;
@@ -18,20 +18,19 @@
     width: 27px;
     height: 34px;
     fill: #666;
-    transition: ease .2s;
+    transition: ease 0.2s;
     &:hover {
       fill: #68b738;
     }
   }
   &:active {
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
 @media (min-width: 768px) {
   .copyright {
     margin: 0;
-    margin-top: -8px;
     &__icon {
       margin-left: 23px;
     }

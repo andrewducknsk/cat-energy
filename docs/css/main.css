@@ -1933,11 +1933,11 @@ h6 {
   padding: 0 20px 23px; }
 
 @media (min-width: 768px) {
-  .cat {
+  .about-cat {
     padding: 0 0 72px; } }
 
 @media (min-width: 1300px) {
-  .cat {
+  .about-cat {
     display: inline-block;
     width: 570px;
     margin-right: 60px;
@@ -2075,6 +2075,10 @@ h6 {
       line-height: 20px; }
     .weight-field__area {
       height: 52px; } }
+
+@media (min-width: 1300px) {
+  .weight-cat {
+    margin: 30.5px 0; } }
 
 .cat-food {
   padding: 20px;
@@ -2464,15 +2468,6 @@ h6 {
       font-weight: 400;
       text-transform: uppercase;
       color: #444; }
-    .comment__area:-ms-input-placeholder {
-      display: inline-block;
-      margin: 0;
-      margin-right: 10px;
-      font-size: 16px;
-      line-height: 18px;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: #444; }
     .comment__area::-ms-input-placeholder {
       display: inline-block;
       margin: 0;
@@ -2530,9 +2525,6 @@ h6 {
       font-size: 20px;
       line-height: 30px; }
       .comment__area::-webkit-input-placeholder {
-        font-size: 20px;
-        line-height: 30px; }
-      .comment__area:-ms-input-placeholder {
         font-size: 20px;
         line-height: 30px; }
       .comment__area::-ms-input-placeholder {
@@ -2683,9 +2675,9 @@ h6 {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       padding: 0 30px; } }
 
 @media (min-width: 1300px) {
@@ -2696,8 +2688,8 @@ h6 {
 
 .copyright {
   margin: 22px 0;
-  -webkit-transition: ease .2s;
-  transition: ease .2s; }
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s; }
   .copyright__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2719,17 +2711,16 @@ h6 {
     width: 27px;
     height: 34px;
     fill: #666;
-    -webkit-transition: ease .2s;
-    transition: ease .2s; }
+    -webkit-transition: ease 0.2s;
+    transition: ease 0.2s; }
     .copyright__icon:hover {
       fill: #68b738; }
   .copyright:active {
-    opacity: .3; }
+    opacity: 0.3; }
 
 @media (min-width: 768px) {
   .copyright {
-    margin: 0;
-    margin-top: -8px; }
+    margin: 0; }
     .copyright__icon {
       margin-left: 23px; } }
 
